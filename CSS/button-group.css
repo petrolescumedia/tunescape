@@ -1,0 +1,96 @@
+  
+  :root {
+    --button-color-1: #ffd1b3; /* Change this color */
+    --button-color-2: #ffb366; /* Change this color */
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border: none;
+    background-color: var(--button-color-1);
+    color: white;
+    font-size: 14px;
+    border-radius: 15px;
+    cursor: pointer;
+	text-decoration: none; /* Added to remove underline on links */
+  }
+
+  .button:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: var(--button-color-1);
+  }
+
+  .button:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: var(--button-color-2);
+  }
+  
+  /* Style for the search box container */
+  .search-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #f1f1f1;
+    margin: 20px 0;
+  }
+
+  .example input[type="text"] {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    flex: 1;
+    background: transparent;
+    border-radius: 5px 0 0 5px;
+    width: var(--search-box-width, 300px); /* Adjust the width */
+    height: var(--search-box-height, 50px); /* Adjust the height */
+  }
+
+  .example button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background: #0096FF;
+    color: black;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    width: var(--search-button-width, 60px); /* Adjust the width */
+    height: var(--search-button-height, 50px); /* Adjust the height */
+  }
+  
+
+
+  /* Media Queries for Responsive Design */
+  @media screen and (max-width: 600px) {
+    .audio-player {
+      width: 90%;
+    }
+  }
+ 
+   .responsive-image {
+    max-width: none; /* Allow the image to expand beyond its natural size */
+    width: 100%; /* Ensure the image fills its container horizontally */
+    height: auto;
+    display: block; /* Ensures that the image doesn't create extra space below it */
+    margin: 0 auto; /* Center the image horizontally */
+	  -webkit-tap-highlight-color: transparent;
+  }
+
+
+.align-center {
+  align-items: center;
+}

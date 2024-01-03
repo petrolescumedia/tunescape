@@ -1,0 +1,128 @@
+/* Style for the bottom navigation */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ffb366;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+/* Style for individual navigation items */
+.nav-item {
+    padding: 5px; /* Adjust as needed */
+    margin: 0 10px; /* Adjust spacing between items */
+    display: flex;
+    align-items: center;
+}
+
+.nav-item img {
+    max-width: 35px;
+    height: auto;
+}
+
+/* Font Face for the custom font */
+@font-face {
+  font-family: 'buton'; /* Specify the name for your custom font family */
+  src: url('fonts/buton.ttf') format('truetype'); /* Replace 'path/to/your/font.ttf' with the actual path to your .ttf file */
+}
+
+/* Remove focus outline on all elements */
+*:focus {
+  outline: none;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff; /* Set the background color to white */
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 9999; /* Ensure it appears above all other elements */
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #df7e12;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Add this CSS to hide page content while the loader is active */
+.no-scroll {
+    overflow: hidden;
+}
+
+        /* Resetting default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styling the top navigation bar */
+        .top-nav {
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+        }
+
+        /* Container for the buttons */
+        .button-container {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Styling for the "Click here to search" button */
+        .search-button {
+            padding: 10px;
+            flex: 1; /* Takes up remaining space */
+            text-align: left; /* Align left */
+            text-decoration: none; /* Remove underline */
+            color: black; /* Text color set to black */
+        }
+
+        /* Styling for the custom image button */
+        .custom-button {
+            padding: 10px;
+            width: auto;
+        }
+
+        /* Styling for the custom image inside the button */
+        .custom-button img {
+            width: 40px; /* Adjust the size as needed */
+            height: 40px; /* Adjust the size as needed */
+            padding: 4px;
+        }
+
+        /* Remove the blue outline on mobile devices */
+        @media (max-width: 768px) {
+            .top-nav a:focus {
+                outline: none;
+            }
+        }

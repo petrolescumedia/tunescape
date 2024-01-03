@@ -1,0 +1,116 @@
+.responsive-image {
+    max-width: none; /* Allow the image to expand beyond its natural size */
+    width: 90%; /* Ensure the image fills its container horizontally */
+    height: auto;
+    display: block; /* Ensures that the image doesn't create extra space below it */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+/* Remove focus outline on all elements */
+*:focus {
+    outline: none;
+  }
+  
+      body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #c2f0ff;
+  }
+  
+  .result-container {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+  }
+  
+  .result-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      width: 100%;
+      color: black;
+  }
+  
+  .result-title {
+      margin-bottom: 10px;
+      color: black;
+  }
+  
+  .result-text {
+      margin-bottom: 20px;
+      color: black;
+  }
+  
+  .result-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5px;
+  }
+  
+  .result-actions {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+  }
+  
+  .result-like {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  .result-dislike {
+      padding: 5px 10px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  .home-button-container {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+  }
+  
+  .home-button {
+      padding: 10px 20px;
+      background-color: #008CBA;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  
+  .post-box {
+      margin: 20px;
+      padding: 10px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      max-width: 800px;
+  }
+  
+  .post-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #00a0cc;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 94%;
+      transition: background-color 0.3s;
+  }
+  
+  .post-button:hover {
+      background-color: #45a049;
+  }

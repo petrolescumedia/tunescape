@@ -1,0 +1,32 @@
+  /* Style to make the image responsive */
+  .responsive-image {
+    max-width: none; /* Allow the image to expand beyond its natural size */
+    width: 100%; /* Ensure the image fills its container horizontally */
+    height: auto;
+    display: block; /* Ensures that the image doesn't create extra space below it */
+    margin: 0 auto; /* Center the image horizontally */
+    align-items: center;
+  }
+  
+h3 {
+  font-family: 'Montserrat';font-size: 22px;
+	align-items: left;
+}
+
+.update {
+    width: 15px;   /* Set the width of the container */
+    height: 15px;  /* Set the height of the container */
+    overflow: hidden; /* Hide any overflow if the image is larger */
+}
+
+.update img {
+    width: 100%; /* Make the image take up the entire container width */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+.update {
+    display: flex; /* Use flexbox to control layout */
+    align-items: center; /* Center vertically */
+}
+
+

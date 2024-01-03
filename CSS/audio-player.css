@@ -1,0 +1,174 @@
+.icon-container {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+    padding-right: 5px;
+    z-index: 1;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 0%;
+    object-fit: cover;
+}
+
+.icon1 {
+    width: 35px;
+    height: 35px;
+    border-radius: 0%;
+    object-fit: cover;
+}
+
+.audio-player {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 90%; /* Centered width */
+    width: 90%; /* Adjust width to content */
+    margin: 0 auto; /* Center horizontally */
+    padding: 3px;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    text-align: center;
+}
+
+.audio-content {
+    display: flex;
+    align-items: center;
+}
+
+.audio-image {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.audio-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.audio-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    padding: 15px;
+}
+
+.audio-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+	font-family: 'Nunito';font-size: 19px;
+}
+
+.artist-name {
+	font-family: 'Nunito';font-size: 16px;
+    color: gray;
+}
+
+.audio-player-controls {
+    display: flex;
+    align-items: center;
+}
+
+audio {
+    width: 100%;
+	background-color: #ffffff;
+  }
+  
+   body {
+    margin: 0;
+    padding: 16;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  
+/* Styles for the pop-out audio control bar */
+
+.audio-popout {
+    position: fixed;
+    bottom: 60px; /* Adjust the distance from the bottom as needed */
+    left: 10%; /* Center horizontally */
+    width: 80%;
+    max-height: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.audio-title-popout {
+    font-weight: bold;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    text-align: left;
+}
+
+.audio-play-button-popout {
+    width: 24px;
+    height: 24px;
+    /* You can add more styles for the play button image here */
+}
+
+/* Show the pop-out when the audio is playing */
+.audio-playing .audio-popout {
+    display: flex;
+}
+
+
+.plyr__controls{
+    display: flex;
+    align-items: center;
+}
+
+        /* Define a custom primary color variable */
+        :root {
+            --plyr-color-main: #0096FF; /* Change to your desired primary color */
+        }
+
+        /* Change the color of the progress bar thumb using the custom variable */
+        .plyr--audio .plyr__progress input[type="range"]::-webkit-slider-thumb {
+            background: var(--plyr-color-main);
+        }
+
+        /* Change the color of the play button using the custom variable */
+        .plyr--audio .plyr__controls button[data-plyr="play"]::before,
+        .plyr--audio .plyr__controls button[data-plyr="play"].plyr--paused::before {
+            color: var(--plyr-color-main) !important;
+        }
+
+        /* Change the play button color on hover using the custom variable */
+        .plyr--audio .plyr__controls button[data-plyr="play"]:hover::before {
+            color: var(--plyr-color-main) !important;
+        }
+
+        /* Change the color of the mute button using the custom variable */
+        .plyr--audio .plyr__controls button[data-plyr="mute"]::before,
+        .plyr--audio .plyr__controls button[data-plyr="mute"].plyr--muted::before {
+            color: var(--plyr-color-main) !important;
+        }	
+		
+		.plyr__time, .plyr__time--current, .plyr__time--duration {
+		font-family: Montserrat; /* Use Arial as the font-family */
+		/* You can specify additional font properties here if needed */
+		}
+
+
+

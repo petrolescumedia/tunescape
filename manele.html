@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <div class="loader"></div>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="CSS/album-list.css">
+        <link rel="stylesheet" href="CSS/album-grid.css">
+        <link rel="stylesheet" href="CSS/audio-player.css">
+        <link rel="stylesheet" href="CSS/loader.css">
+        <!-- Add more stylesheets here -->
+    
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Koulen' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+    
+        <!-- External Libraries -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.css">
+    
+        <title>Responsive bottom navigation</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">TuneScape</a>
+            <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        
+                        <li class="nav__item">
+                            <a href="albums.html" class="nav__link active-link">
+                              <i class='bx bx-album nav__icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="music.html" class="nav__link">
+                              <i class='bx bx-music nav__icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">
+                                <i class='bx bx-home-alt nav__icon'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="radio.html" class="nav__link">
+                              <i class='bx bx-radio bx-flip-horizontal nav__icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="altele.html" class="nav__link">
+                              <i class='bx bx-food-menu nav__icon' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="https://cdn-icons-png.flaticon.com/128/26/26805.png" alt="" class="nav__img">
+            </nav>
+        </header>
+        <br>
+</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js" integrity="sha512-vONptKEoKbP1gaC5UkbYDa9OPr04ur4bxaaqT7DAJxGHB2oogtseCPrl5e5hPFokGYotlGNV4d+GM593ka7iNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const players = document.querySelectorAll('audio'); // Select all audio elements
+                players.forEach(function (player) {
+                    new Plyr(player, {
+                        controls: ['play', 'progress', 'current-time', 'mute']
+                    });
+                });
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js" integrity="sha512-vONptKEoKbP1gaC5UkbYDa9OPr04ur4bxaaqT7DAJxGHB2oogtseCPrl5e5hPFokGYotlGNV4d+GM593ka7iNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const players = document.querySelectorAll('audio'); // Select all audio elements
+                players.forEach(function (player) {
+                    new Plyr(player, {
+                        controls: ['play', 'progress', 'current-time', 'mute']
+                    });
+                });
+            });
+        </script>
+            <script>
+                window.addEventListener("load", () => {
+                    const loader = document.querySelector(".loader");
+                    const body = document.body;
+        
+                    loader.classList.add("loader--hidden");
+                    body.classList.remove("no-scroll"); // Remove the "no-scroll" class to reveal content
+        
+                    loader.addEventListener("transitionend", () => {
+                        body.removeChild(loader);
+                    });
+                });
+            </script>        
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
+<html>
+  <body>
+    <br><br><br>
+    <h3><strong>Manele</strong></h3>
+    <br>
+
+
+  <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/10692/10692946.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          50 Bani
+        </div>
+        <div class="artist-name">
+          Romanian Remix
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/50 bani.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+  <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://i.imgur.com/ioerh8o.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Aragaz pe Butelie
+        </div>
+        <div class="artist-name">
+          Bogdan de la Cluj
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/aragaz.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+   <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/5991/5991618.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Asa sunt Zilele Mele
+        </div>
+        <div class="artist-name">
+          Adrian Copilul Minune
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/Asa sunt zilele mele.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+   <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/3578/3578291.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Beau Vinul cu Borcanul
+        </div>
+        <div class="artist-name">
+          Nicu Paleru
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/borcanu.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+  <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/1161/1161619.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Chef de Chef
+        </div>
+        <div class="artist-name">
+          Adrian Copilul Minune
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/Chef de Chef.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+  <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/3202/3202926.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Dacia Logan
+        </div>
+        <div class="artist-name">
+          Gica Vitezomanul
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/gica.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+  <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/256/8143/8143924.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Instrumentala Criminala
+        </div>
+        <div class="artist-name">
+          POC POC POC
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/criminala.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+  <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/9004/9004844.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Jingle Bells Balkan Style
+        </div>
+        <div class="artist-name">
+          Turcu
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/Jingle Bells Balkan.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+  <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/5611/5611079.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Manea PSD
+        </div>
+        <div class="artist-name">
+          Nicolae Guta
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/Manea PSD.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+    <div class="audio-player">
+      <div class="icon-container">
+        <img class="icon" src="" alt="Icon">
+    </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/836/836919.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Manea Instrumentala
+        </div>
+        <div class="artist-name">
+          Dan Bacau
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/manea instrumentala.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+    <div class="audio-player">
+      <div class="icon-container">
+        <img class="icon" src="" alt="Icon">
+    </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/894/894947.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Manea Instrumentala 14
+        </div>
+        <div class="artist-name">
+          Dan Bacau
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/manea instrumentala 14.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+   <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/176/176542.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Manea Instrumentala &
+        </div>
+        <div class="artist-name">
+          Dan Bacau
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/manea instrumentala &.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+   <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/5672/5672201.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Manea Otelul Galati
+        </div>
+        <div class="artist-name">
+          YouTube
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/otelul.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+  <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/3526/3526120.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Ma Bate Vantul in Fata
+        </div>
+        <div class="artist-name">
+          Nicolae Guta
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/Ma bate vantul in fata.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+  <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/6124/6124447.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Melodie pe Doua Voci
+        </div>
+        <div class="artist-name">
+          Nicu de la Cazanesti
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/Nicu.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+
+  <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/2451/2451015.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          SMS
+        </div>
+        <div class="artist-name">
+          Metin Taifa
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/sms.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+   <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/827/827848.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Suna Telefoanele ca Dracii
+        </div>
+        <div class="artist-name">
+          Nicolae Guta
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/Suna telefoanele.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+  <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/1048/1048329.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Sunt Sofer de Camion
+        </div>
+        <div class="artist-name">
+          Paul Lica
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/camion.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  
+   <div class="audio-player">
+    <div class="icon-container">
+      <img class="icon" src="" alt="Icon">
+  </div>
+    <div class="audio-content">
+      <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/4507/4507464.png" alt="Audio Image">
+      </div>
+      <div class="audio-controls">
+        <div class="audio-title">
+          Zarzavat
+        </div>
+        <div class="artist-name">
+          Metin Taifa
+        </div>
+      </div>
+    </div>
+    <div class="audio-container">
+        <audio id="my-audio-2" controls>
+            <source src="music/zarzavat.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </div>
+  </div>
+  &nbsp;
+  <br><br><br><br>
+  </body>
+  <script src="JS/icon.js"></script>
+  </html>

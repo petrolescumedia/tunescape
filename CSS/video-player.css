@@ -1,0 +1,38 @@
+/* Display controls flexibly */
+.plyr__controls {
+    display: flex;
+    align-items: center;
+}
+
+/* Define a custom primary color variable */
+:root {
+    --plyr-color-main: #0096FF; /* Change to your desired primary color */
+}
+
+/* Change the color of the progress bar thumb using the custom variable */
+.plyr__progress input[type="range"]::-webkit-slider-thumb {
+    background: var(--plyr-color-main);
+}
+
+/* Change the color of the play button using the custom variable */
+.plyr__controls button[data-plyr="play"]::before,
+.plyr__controls button[data-plyr="play"].plyr--paused::before {
+    color: var(--plyr-color-main) !important;
+}
+
+/* Change the play button color on hover using the custom variable */
+.plyr__controls button[data-plyr="play"]:hover::before {
+    color: var(--plyr-color-main) !important;
+}
+
+/* Change the color of the mute button using the custom variable */
+.plyr__controls button[data-plyr="mute"]::before,
+.plyr__controls button[data-plyr="mute"].plyr--muted::before {
+    color: var(--plyr-color-main) !important;
+}
+
+/* Adjust font-family for time display */
+.plyr__time, .plyr__time--current, .plyr__time--duration {
+    font-family: Montserrat; /* Use Montserrat as the font-family */
+    /* You can specify additional font properties here if needed */
+}

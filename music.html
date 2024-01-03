@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <div class="loader"></div>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="CSS/album-list.css">
+        <link rel="stylesheet" href="CSS/bottom-nav.css">
+        <link rel="stylesheet" href="CSS/audio-player.css">
+        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="stylesheet" href="CSS/button-group.css">
+        <link rel="stylesheet" href="CSS/loader.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="https://kit.fontawesome.com/897d001a8e.js" crossorigin="anonymous"></script>
+        <!-- Add more stylesheets here -->
+    
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Koulen' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+    
+        <!-- External Libraries -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.css">
+    
+        <title>Responsive bottom navigation</title>
+    </head>
+    <style>
+  :root {
+    --button-color-1: #0096FF; /* Change this color */
+    --button-color-2: #6ab8f0; /* Change this color */
+  }
+    </style>
+    <body>
+        <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">TuneScape</a>
+            <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        
+                        <li class="nav__item">
+                            <a href="albums.html" class="nav__link">
+                              <i class='bx bx-album nav__icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="music.html" class="nav__link active-link">
+                              <i class='bx bx-music nav__icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">
+                                <i class='bx bx-home-alt nav__icon'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="radio.html" class="nav__link">
+                              <i class='bx bx-radio bx-flip-horizontal nav__icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="altele.html" class="nav__link">
+                              <i class='bx bx-food-menu nav__icon' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="https://cdn-icons-png.flaticon.com/128/26/26805.png" alt="" class="nav__img">
+            </nav>
+        </header>
+	      <br><br><br>
+    <h3><strong>Muzica</strong></h3>
+    <br>
+
+        <div class="button-group">
+            <a href="music.html" class="button"><i class="fa-solid fa-music fa-beat"></i></a>
+            <a href="albums.html" class="button"><i class="fa-solid fa-compact-disc"></i></a>
+          </div>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        
+        <form class="example">
+            <input type="text" placeholder="Search.." id="searchBox">
+            <button type="button"><i class="fa fa-search"></i></button>
+         </form>
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/2634/2634269.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Baby Blue
+              </div>
+              <div class="artist-name">
+                Badfinger
+              </div>
+            </div>
+          </div>
+            <div class="audio-container">
+              <audio id="my-audio-1" controls>
+                  <source src="https://od.lk/s/MzlfMzYyMjEwNjNf/baby%20blue.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>	
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/7006/7006950.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Bad to The Bone
+              </div>
+              <div class="artist-name">
+                George Thorogood & The Destroyers
+              </div>
+            </div>
+          </div>
+            <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="https://od.lk/s/MzlfMzYyMjEwNjFf/bad%20to%20the%20bone.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/4252/4252299.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Better Call Saul Theme Song
+              </div>
+              <div class="artist-name">
+                Little Barrie
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-3" controls>
+                  <source src="music/saul goodman.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/9312/9312411.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Bosanska Artiljerija
+              </div>
+              <div class="artist-name">
+                Bosnian Army
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-4" controls>
+                  <source src="music/bosnia.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/3485/3485280.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Can You Fell my Heart
+              </div>
+              <div class="artist-name">
+                Bring Me The Horizon
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-5" controls>
+                  <source src="music/can you feel my heart.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/2251/2251966.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Cheki Breki
+              </div>
+              <div class="artist-name">
+                Russian Harbass
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-6" controls>
+                  <source src="music/cheki breki.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/2208/2208264.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                C.R.A.S.H
+              </div>
+              <div class="artist-name">
+                Grand Theft Auto San Andreas
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-7" controls>
+                  <source src="music/crash.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+      
+        <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/3486/3486388.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Derdim
+              </div>
+              <div class="artist-name">
+                Mehman Samaxili
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-4" controls>
+                  <source src="music/derdim.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/444/444686.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Erika
+              </div>
+              <div class="artist-name">
+                German Nazi Military Song
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-8" controls>
+                  <source src="music/erika.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/361/361190.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                El Sonidito
+              </div>
+              <div class="artist-name">
+                Hechizeros Band 
+              </div>
+            </div>
+          </div>
+            <div class="audio-container">
+              <audio id="my-audio-9" controls>
+                  <source src="music/sonidito.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/10645/10645483.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Gangsta's Paradise
+              </div>
+              <div class="artist-name">
+                Coolio
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-10" controls>
+                  <source src="music/gangsta.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/3409/3409879.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                GAS GAS GAS
+              </div>
+              <div class="artist-name">
+                Manuel
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-11" controls>
+                  <source src="music/gas gas.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+      
+          <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+            <img src="https://i.imgur.com/MIY4Ee2.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+            <div class="audio-title">
+              Lario of Nights
+            </div>
+            <div class="artist-name">
+              
+            </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-3" controls>
+                  <source src="music/lario.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+          </div>
+          &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/8079/8079927.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Traditionell Musette
+              </div>
+              <div class="artist-name">
+                A Horible Unknown French Artist
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-12" controls>
+                  <source src="music/baguette.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/5110/5110756.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                In The End
+              </div>
+              <div class="artist-name">
+                Linkin Park
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/in the end.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/581/581601.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Moon Men
+              </div>
+              <div class="artist-name">
+                Jake Crudnow
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/moon men.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/677/677786.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Never Gonna Give You Up
+              </div>
+              <div class="artist-name">
+                Rick Astley
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/rickrooll.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+          <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/10643/10643926.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Paris Pigalle
+              </div>
+              <div class="artist-name">
+                Another Horible Unknown French Artist
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/paris.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/2322/2322538.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Red Sun in The Sky
+              </div>
+              <div class="artist-name">
+                Chinese Propaganda Music
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/red sun.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/2571/2571447.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Running in The 90's
+              </div>
+              <div class="artist-name">
+                Maurizio De Jorio
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/running in the 90.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/8603/8603636.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Serbia Strong
+              </div>
+              <div class="artist-name">
+                Serbian Military Song
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/serbia.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/7091/7091541.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Song for Denise
+              </div>
+              <div class="artist-name">
+                Piano Fantasia
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/putin.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/2074/2074373.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Spectre
+              </div>
+              <div class="artist-name">
+                Alan Walker
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/spectre.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+        <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+            <img src="https://cdn-icons-png.flaticon.com/128/2881/2881031.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+            <div class="audio-title">
+              Top Gear Theme Song
+            </div>
+            <div class="artist-name">
+              
+            </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-3" controls>
+                  <source src="music/gear.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+          </div>
+          &nbsp;
+      
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/3211/3211473.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                The Final Countdown
+              </div>
+              <div class="artist-name">
+                Europe
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/countdown.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/7734/7734381.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Tunak Tunak
+              </div>
+              <div class="artist-name">
+                Daler Mehndi
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/tunak tunak.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/2359/2359659.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Turner Dans le Vide
+              </div>
+              <div class="artist-name">
+                Indilla
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/turner.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/914/914612.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Xenogenesis
+              </div>
+              <div class="artist-name">
+                The Fat Rat
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/xenogenesis.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/10692/10692946.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                50 Bani
+              </div>
+              <div class="artist-name">
+                Romanian Remix
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/50 bani.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://i.imgur.com/ioerh8o.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Aragaz pe Butelie
+              </div>
+              <div class="artist-name">
+                Bogdan de la Cluj
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/aragaz.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/5991/5991618.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Asa sunt Zilele Mele
+              </div>
+              <div class="artist-name">
+                Adrian Copilul Minune
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/Asa sunt zilele mele.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/3578/3578291.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Beau Vinul cu Borcanul
+              </div>
+              <div class="artist-name">
+                Nicu Paleru
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/borcanu.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/1161/1161619.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Chef de Chef
+              </div>
+              <div class="artist-name">
+                Adrian Copilul Minune
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/Chef de Chef.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/3202/3202926.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Dacia Logan
+              </div>
+              <div class="artist-name">
+                Gica Vitezomanul
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/gica.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/256/8143/8143924.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Instrumentala Criminala
+              </div>
+              <div class="artist-name">
+                POC POC POC
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/criminala.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/9004/9004844.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Jingle Bells Balkan Style
+              </div>
+              <div class="artist-name">
+                Turcu
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/Jingle Bells Balkan.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/5611/5611079.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Manea PSD
+              </div>
+              <div class="artist-name">
+                Nicolae Guta
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/Manea PSD.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+          <div class="audio-player">
+            <div class="icon-container">
+              <img class="icon" src="" alt="Icon">
+          </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/836/836919.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Manea Instrumentala
+              </div>
+              <div class="artist-name">
+                Dan Bacau
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/manea instrumentala.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+          <div class="audio-player">
+            <div class="icon-container">
+              <img class="icon" src="" alt="Icon">
+          </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/894/894947.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Manea Instrumentala 14
+              </div>
+              <div class="artist-name">
+                Dan Bacau
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/manea instrumentala 14.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/176/176542.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Manea Instrumentala &
+              </div>
+              <div class="artist-name">
+                Dan Bacau
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/manea instrumentala &.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/5672/5672201.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Manea Otelul Galati
+              </div>
+              <div class="artist-name">
+                YouTube
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/otelul.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/3526/3526120.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Ma Bate Vantul in Fata
+              </div>
+              <div class="artist-name">
+                Nicolae Guta
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/Ma bate vantul in fata.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/6124/6124447.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Melodie pe Doua Voci
+              </div>
+              <div class="artist-name">
+                Nicu de la Cazanesti
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/Nicu.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+      
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/2451/2451015.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                SMS
+              </div>
+              <div class="artist-name">
+                Metin Taifa
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/sms.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/827/827848.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Suna Telefoanele ca Dracii
+              </div>
+              <div class="artist-name">
+                Nicolae Guta
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/Suna telefoanele.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/1048/1048329.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Sunt Sofer de Camion
+              </div>
+              <div class="artist-name">
+                Paul Lica
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/camion.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+        
+         <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/4507/4507464.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Zarzavat
+              </div>
+              <div class="artist-name">
+                Metin Taifa
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/zarzavat.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+
+        <div class="audio-content">
+          <div class="audio-image">
+          <img src="https://cdn-icons-png.flaticon.com/128/8093/8093162.png" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+          <div class="audio-title">
+            Ani de liceu
+          </div>
+          <div class="artist-name">
+            Stela Enache feat. Florin Bogardo 
+          </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/gulag.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        </div>
+        &nbsp;
+      
+      <div class="audio-player">
+        <div class="audio-content">
+          <div class="audio-image">
+            <img src="https://cdn-icons-png.flaticon.com/128/744/744502.png" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+            <div class="audio-title">
+              Dragostea din Tei
+            </div>
+            <div class="artist-name">
+              O-Zone
+            </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/dragostea.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+      </div>
+      &nbsp;
+      
+      <div class="audio-player">
+        <div class="audio-content">
+          <div class="audio-image">
+            <img src="https://cdn-icons-png.flaticon.com/128/2360/2360896.png" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+            <div class="audio-title">
+              Eu sunt Popa Nae
+            </div>
+            <div class="artist-name">
+              Popa si Dascalul
+            </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/nae.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+      </div>
+      &nbsp;
+      
+       <div class="audio-player">
+        <div class="audio-content">
+          <div class="audio-image">
+            <img src="https://cdn-icons-png.flaticon.com/128/1752/1752933.png" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+            <div class="audio-title">
+              Foaie Verde 5 Chiperi
+            </div>
+            <div class="artist-name">
+              Nicolae Cretu
+            </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/5 chiperi.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+      </div>
+      &nbsp;
+      
+      <div class="audio-player">
+        <div class="audio-content">
+          <div class="audio-image">
+            <img src="https://masterroyale.io/img/master-royale-king.png" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+            <div class="audio-title">
+              Frumuseii Mei 1
+            </div>
+            <div class="artist-name">
+              XSlayder feat IraphaHell
+            </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/frumuseii1.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+      </div>
+      &nbsp;
+      
+      <div class="audio-player">
+        <div class="audio-content">
+          <div class="audio-image">
+            <img src="data:image/jpeg;base64,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" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+            <div class="audio-title">
+              Frumuseii Mei 2
+            </div>
+            <div class="artist-name">
+              XSlayder feat IraphaHell
+            </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/frumuseii2.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+      </div>
+      &nbsp;
+      
+      <div class="audio-player">
+        <div class="audio-content">
+          <div class="audio-image">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBgVFBUYGRgZGyEYGxkaGhgaGhsbHRobGhsYGxobIS0kGx8qHxoaJTcmKy4xNDQ0GiM6PzozPi0zNDEBCwsLEA8QHxISHzMrJCg0NDM8NDY0MzEzMzwzNTEzOTY2MzMzMzMzMzUzMzMzMzMzMzMzOTMzMzMzMzMzMzMzM//AABEIAQkAvgMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcBAgj/xABEEAACAQIDBQUECAQEBAcAAAABAgADEQQSIQUGMUFRImFxgZEHEzKhFCNCUoKxwdFicrLwM6LC4RZjktIVNFNzk6Px/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAIDBAEFBv/EACoRAAMAAgEDAwMEAwEAAAAAAAABAgMRIQQSMUFRYQUioRMUcZEyYoEV/9oADAMBAAIRAxEAPwDs0REAREQBERAEREA8iJX9sbZem5RFXQA3NzxHTS0rvIoW2SmXT0iwRKXh9p1nbtO3lYf02liwzG2pJ8zMb+ownpJltYHK22SUTHTOkyTdFdyT9yhnsTyeyQEREAREQBERAEREAREQBERAEREA8nhM9mOvwMhkrtls6vJ6rg8CDKlvQPrvwD8zJLG4hkUm+UnTvA/eVLH41QbswHjxP7zz3lrPPape/jkvhKH3N8G3gTrLPhH0lJwG0M5Ipoz5RckWAHmTxkvg9uDhlI5EHiPKZ/8Azupumpnlem0mv+FuXPi7Vtlvp1gBrMOPxQCEg2Nx3GRVLaqkWynxnzXxaNoD5HSXZP3WGNVL1r28FGN47rhmxgsYQb3JU8f3EnAb6yr0DyliwfwL4SH03PdU5fjz/Bb1ONTpmzERPYMgiIgCIiAIiIAiIgCIiAIiIB5Pipwn1NTaTkUzbnp6zjjv+33OVXamynbz7TzMUTgNM3XwlKxTces2tq7bQuRTXOAbFgbddVFtRp3SGq4oHtOwtf4NR8+N57GK+n6bF2wufz/Zi7cuV7otOwtqU7LTVcltSCe0TbVyfteI4DkOE9xW0keoCMoA+1bU+nLpKki1azn6KiWQAtm5XJtw05GRtXHVKbstRlz3sbdlbDTlPIxxix5nmmm37P5PQrvrEoa49zqGErqw7FRW7gQT6cphxFfUqSLjW1xceU55R2ydAdR3D9Tw9JsPtME3TRibk3uSbAXJ8ABNv7/jmTKul54Zfdm7VKNlfVevMfuJ0LB/Av8AKPynH1f6tXzBuyDmFiDpqRadP3Zr5sPTXNmKqNeGh1At3DTymHNhw48qqeHS8e+jTNXU6fKXqTURE6cEREAREQBERAEREAREQBERAPJDbzY0UqIJXNmqJT8M7qubwF5MzQ2xgBXpNTvYnVT0YcD6xtrlHGk00fn/AG1i6dKtVWk3YV2QHhaxsVHWxuAedryKeozkGo5RTwBPaPj0klsjBNT2klOpoyYg0mubasShbXlY3v0N5fMHutTppifeZGasuTODrTTjlQ95Fzwvw5SebyyeCX41s1dxqNL3bLSsb2LtzPIAn19TPd5N30Vc6Kzu7BQo1LMxsAPEmfWzcRh8Cgp0yXP2n01sSAPAD85K/wDEtAgF+yOXPUcx0mK9Sz0oW5OZ1diVCKjCmLUi3vClRCyBDZmNNWzZQSO1lI1ve2sk8LuqThqlVqj9kCwsBcFgGufAnhadGo7TwNMs5qUEZ/iOZM7A6nNrmPhKftDeurVFWklOklJi6Kcjl2W5CuDmAuR2vh05yS7nrRnrtnafLKrhMU2GqZLk0X0a/ANdhmHQi1+8fLvW6uEKYdC3FkU26DKLDxnHcNupUxSPasia9nMrG7kFrMR8I7Q1F+PDSd2wlMKiqDcBQAe4Cwlr1bTflb1/0zuXM/DNiIiTKxERAEREAREQBERAEREAREQBERAOIbZxRqvVc8Xdu1pcDVVGvEZMoGt+yJGU8VXSmKS1GCKMoUBeHS+W828XslsTisWMFiQKNFh2it8xctdUZfiUMjANztz4mm7Wwdam496WZb2L66a66cpY9eqEd3ozdxDU1zFqmp1IViST0009Zj+lUeTMO5gSQeYvz1vJLA7vKwBVb6cT1kvR3SJGZsijqeHGUZK0/BbE79StDG0h9onwX/cTLS2tSB7KO3cFUH8jLBi906jKyUVR2Nh2Rp4luA1k7un7PEw495WIeodSB8I7h18ech+rtFiw88mPd/GPRCfSKfuqWIByFicyspFmqX+G+a+vibTqOzT9WOlzbwuZQPaEqjBXNgUdcvfc5SB5En8Mrns23oahXNPEVyMOyEKGJKI4IK5b/CCM4NrDh4xj5+45lel2+nk7fE1sJi6dVc9KolRT9pGV19VJE2ZcZxERAEREAREQBERAEREAREQDyUv2l4+mMFVo/SPd1XAyqpOdrMCVIXUKygqSdO1r0ln2rSZ6FVFcozU2VXBsUJUgMDyIJvfun5pw+KL6uTmOpJuTfjck6k+MlK2cbLp7O3VaeJpkjO2QgcLqucaeBb5iT6YIE6qDOfbPZ1cOjFSv2h+R6+Et1HebKpLUwbDiDa55C1v7+UlfK0ieJqXyTSYMC2Wko8Bb8pJYDCACwp0xrcgIg143OnGc32rvNiaoIVvdJ0pk5j4vx68LSv0kIbMCQ3HMCQ2t+fGZqw0/LNK6iVwkfoKmLcZH7Z29h8Mt6tVVPJBq58EGtu/hOOja2KCFPpFbLexBqOfmTcDuvI5yASSdTqSeJ7yTOTi92RrN7Il95tvvjKgJBSmvwITw6u1tCx+Q0HMmFrEAG1r8pirYjpy5z5DX75YtJakqe290dD9ku3qVBq9Os+UVMjIe1lBGcNfkvFdbctToJ2SnUDAFSCDqCDcEdQec/OmzgEQKo15nmTLPsTeOvhtEa68Srar5Dl5WmtdM+3zyZ3lWzs89lZ2DvbRxFkb6uofsk6Mf4W69x+cssz1LT0yaafg9iInDoiIgCIiAIiIB5K5vBvKMO2QIWe17nRRfh3n5Sxyq767OFRA6/GnzHSXdOpdpUuCvI2ltFO2jturUHbdiOl7D0Gk57tjChWLp8JNyPunu7vylprvYG80KWz6tWpakhewzsLgdm4BJLEDmB5z0c8x2+yX4M8N93BVaGMddAef9/pN5NuaEMgv3G1rd3jb5zY23sB6bOwpsumYLYgd4H+0r9Wk6jMR2T9oajz6ec86l6rle6NKeyXO1kItk+f8AtMf08cukiM15kpvKqbLJRvvimM1mfta8x/f6T5RixsgLHu5SZ2TupiMUVsQqk5bk6k9At9fO0pulK7qekTSbekQ7MTcAFiBc25DqTJLZWznb6xzYdTw8p1XYns6o00C1ACL3YfEWP8XLy1Eht9t36iOppACmTZgBYK3Jv5SPQjvEdP1eF5FK8v19COTG9N/ggcHTB+EadZICjMaMlJQPTqZ8YjFhRdzboo1J8p62zLo9fThLtutveVtSxLXXgrnivc3Ud/Eflz+hUrV2yYem7nnkUuR4kCyzV27hMXhVD18PVCk2zm+UE8ieAMpyXL4ZOZfk/RKOCAQQQdQRqCOoMyTnfsixdSpQq5mJphlyA65WIbOo7vhNu89Z0SZWWiIicAiIgCImGtXVRdmC+JA/OAfVRrCVnaWKGexm7jNsUrG1RPUSh7c2tZ7hgfAzTh1L2zPkTrhGPe7CKtQMgtnW/dcWvJzdzBrh6ARiPevZ3/h+5Tv/AA3uf4iekhNrYkVsPSqDirFD5i/+mV6rtLE0rNTa63sUbUX7r8B3SfXYsmXClHj1+R01TFfcdJxAQg5rZQLsTwtKlX3dp1QKwvSLlrIqqoCqcoJ6kjXzkHit7alSi9NqeRiOIvYnkO4XsfKbq700wqJTJCU0VFBAJsoAzMb8Txnz84+owttbXoep3Y8iS4Z5gvZlTrVCBXdeLE2U215C3fMex9wsNUd1NSocjumtlBCscpsoB1Wx485LbG30Sm5z6hly3ygFW+yfC/H15awGyt5hR95cuxaoXVrjhbLa5OmgWF+4qW9vg5qZrRe9l7kYOj8NMm9r3JN7dSbnmecgd4KtLB47KHKCuEf3YTKiWXJnVwbXzJqLc7+Nfxm+7HgL/wAzM/7fnI/FbU+nACu4U0/gawBUX7Qub3HDjGDpc1vV718s7eSJ5TWzrOP3rpUaY97UUNlFwvaa9unBfOUvH76vic1Oiq5Toxc5jbqfsp8z0lKxeIw6/aeqR1OVP78BN/YuzMbihehQbIeBUCmluudyAx8z4TVi+nxjaq3tr+imszriVolqVMXuWJY8XsPRQdAJv4TBUedJWJ4l/rCfN7zLhfZ1jSLvVpIeQzO587KAPImYcXsrG4LtVEz0xxZDmAHfpdfMWm55k35KP0mvQs2zdoVKShKdkQcEVVC/9NrSdp7Zp1qbUsTTVkYZWFtCDxuP2lV2bikqoGQ3HMcwehm2VlVUWSkWfczYaYKg1Gm2emajujcTlaxAPeOHfa+l7SxSlbI2m1NrcVPEf3zlypOGAINwRcTirYqdGSIiSICInw5sCYBo7U2gKS9/KUTH7SaoxuZ7vPtbM5F5Vq+2ETqzdB18ZftQvkrSdPZM1RcaypbfW2o0Ill2fgMdiLFaSUkP2qma9u5RqfQeMzbQ3TpsMj1nz21IVVXyU3PzlP6i2XrE9eCpbtbSZqdai5vbJUX1yN/UvrJunTBTUXBJ/ISvHd+vhK2ZrPTZWUuulhowzKeGqjheTuEe6ef6Cev0Vd069jB1EuWRmP2Y2vu20+636MP1BkTS2eUuWAzNxtwA5AS0VbzTejeW3hlvZCbetFcxdCYFokyxVMJcz7p4EDlMt4tstm+CATZzGT27vs+rYrt1GFGlfRmF2fvRLjTj2ifAGXfd/dlQBUrr3qh/N/8At9eksi40e8yDktz0AvYD++hmDNcy+2XybcWGqXdRF7F9nuBw5De7NVx9qqQ2vcgAQel5bVAGgmvTqzZWYnTfkv7e0+hD0wRY6g8ovPGeNojycy3n2b9ArrXpD6iocroOCNx07jqR04c5vLiQRcG4Oo8JMb8Ir4KsGtohYX5MvaB9ROd7E2gTTAP2dPLiJOb7kKnTXyWtausuO7OLzKVPLtDwPH5/nOdU8VeW3c6rerb+A39VnE9UiTW4Zd4iJeZTyaG2a2Si7d035Db2G2FqHoLzs+Ucrwcb2jiHq1vd09WY8enieUvO7O7dKgA5Ad+bsNfw/dHh53lI3O7VZ6h4gD5kn9BOiUsXOWnT7i/FpLROCrNXFKrizKD/AHyPKaq4qe/SAb6i/K/WU5K0jTEpkRj8ALHI/k3aEqSIyVHVrfFcWOliB6agyd2tjK9FC9REIuACj3XU2F7gEcekrVbEAuamtyALXFtPKaOhyub2/Bn62E50vJPmgnAqLfP14zSr4EgjLqp4Hp4zcotmUHqhb0QsPymMVrjpbiJ58fUc2LJTVbXs+SVdNFyk1r+DxKCC3ZU95AJ+ckNnYemKgqZdF4LyD9den7dJGs2hM2Nl7XpvT923ZZb+evEd/dIdP1GWqdOn6+vnZa8ULS0if2jtRKdNqjNYAXJkVhto3XP9pu0f0HkNJVNs1HqnKCSig2HInTXy1mjhtsGnam976AHkeVj0Mtx2m37k7rwvQ6FsjbjPUZWFgCAD38SPy9ZacPiZzei4VRY8NfPmZsbG3jZqrofgWwB7ze48tPWSuWnwclqlydNWpeY6tSwuZDptVFQszAKBckmwnNt99+HrA0MPmSmdHqWKlx91ei9TzkFunpEajt5Zh9oe+Hv3+jUG+rU9th9sg8Afujmechdk1sqecg6SACy/KbaVCBaaFKS0jO6be2WnD4udJ9nmHLK9Y8D2F77G7nwvlHkZy7dDZ30vFJQapkDXJIF2soLFV5ZiAdTw468D3/CYVKSLTpgKigBQOQETHO2Rq+NI2YiJaVnk1do4UVaT0z9pSt+h5H1m3EA/OexqzYTGvQrDKSfdNf7Lg9g+DX488ynhL2KpEsG+u41HaAz393XUWFQC4YfdddMw6G4I8NDW6OxMZh6dsUqtksPeo2ZXHAFgbMrciSLcNdZOX6EkzMcSZq43aNSmMy0yw524jy5zWqYkAzWq7Y1Kim5tzyNaZc3+RtxPgjNqbe98BTF75rkHu1/O0j6rm0xVcQtTFWAsQpuLWPEcZt1aMtxT9plzVuiybKe9NP8A27f/AFlZ8FQbHmJj2K3Yp+JX/OR+U+kOk8bKtZGjZje5R650kcdnBmueHG0kZ6JX3OfBPWzE1IcLSsbz4LLZxzsPzvLWeMi966f1dI95H9Usw21aXuKlOWQeF2wxphXuGGmax1HW3WSGya65SBoQST1PfIXIOo9ZkpML6ML9xnpbe9lCS1rZPbbxV6aU8xLXzEcgLGwPeb38pq4A2M07jiTc+Zn2mOpIQGJvxtlbh42lXa34L+6U9tkhvcP/AC5/gcejA/6pXCJO7d2pRrUqSpmzozXuthlYC+vW6r85CT0unTUJNHndTSeRtPgmtx8R7vaGGf8A5gT/AOQGn/rn6Jn5fw1Qo6uvxIwYeKm4+Yn6coVQ6qw4MAw8CLiMnkqkyxESskIiIB5Kl7RtvfRMG+U/WVQaad1x2n/Cp9SJbZwD2ibd+lYlypuidhOlgdW/Ebnwt0lmOO58+hG60iu/8S1LWqLmP3hoT4jhf0np3rbLbt/L95BVuM12E5cS2WRkpLhm5RqVK1dcjFXqMqAgkHtEKBceUu9bAZLqSTbTUkmU7ddguNwxPKsnrnFvnaX/AGo/bM29Hjly20Zc9PaPdktlpj+Fz/pb9Zv/AEhfur6n95VMSTNCqxnndT9M7sjpPW/g1Yur7ZU6Lz9MX7qfP959DaA6J6D95z5hPjLMr+l/7fguXWfB0CtjlbiUHhYSP3ndWw9LKwJDngQTwaU9E1kjTpSWP6b20q34+Dl9XuWteTEaFwPH9Ju4TBr0mVaHZH836GbdFLTe8X2szK+UfSYIdJ7jdkCpTuB207Y7x9pfMa26qJJUUuJsYc5WBmFrte0bIapaZQtoUsrKw4MPmLfpb5zEssO8uBC5wo0/xE7hrceXaHkJWkaejLTSaMNJptM2qaXnedwcd73A0vvUx7pu7Jov+TKfOcKw7idF9nO2lp1TSY9ira3c40B/ENPJZG52hLOqxESgsERPIBC73Y73GCr1AbEUyFPRm7Cn/qYT824hrmdz9ruKybPI/wDUqInpd/8AROCmpL44krryY2ozWqpabjVZqVmkWSR7s2rkrU3+66t6MDOj7Q+Izl5nR3xGemrj7ShvUXm3o64pfwUZl4ZH4ppHO83sSRbuH93kOcemax4fenc1JeWchbM159BTMiAHUazKijwlSXuWNnlClJGkswIlvDqOH+02aZlihFezcC9g+IPzt+s+1XTynyp7LeF/TX9JkpazlT6EkzbwdTSbWaVyhjQuhPCbNLFvUYJTRnc6BVBJM8qkboemSe2bNTRjxDFfwsLn+n5znzrkZlP2SR6HjJTE7Sq/Svc1FK5GZGQ8nGhvbTiNPHvmrtunlqZvvqD5jsn8h6zXhlqEZ8tKqbMC1JlpY1lIIPCaQaCZYQP0pultgYvCU6t+1bK/8y6H10PnJucc9ju2slV8Mx0qDMv8y8R5i/oJ2OZqWmWJ7QkBit7cFTdkauMykqwCu1mBsVJVSLg6Wk/OT737mVaVVsRhw1Sm7F3QXLozEsxA4slyeGovrcaiWOZp6pnLbS4NL2v7yUK9GhTovm7bM3ZdbWTKPiAv8Z4Tk7PLdvTsnFVWpihg8QyKmrLSquC7G5swWxsAnDhrKvjNkYmkCauHrIBxL03QDzZRJ01L7V4RydtbZrF5idp85p8kyDo6ke3lu2Tis2HUc1uvobj5WlPkvsWtoy+DD8j+kt6e9Vr3I5J3Jv7Rrk2QG1yB5k2HlreaeI2JVQ6hT3hv3tMe0HIs3R7+l/2lvxtiJ3Ku5tv0OR9uiq4TC1VOjADmDc/KS+QgXPDr+/SeKNZvVNnVq9N6eHRndgLKo1tmGY9wtMk56lpLwaHjmls1KbkcDNmnWU8dD1H6r+1p7gdxNsLa2EJXo1SiLeF3uJtbU3cxeFUNXosqniwKuq9zMhIXzte89CMssyVDRkpg2PMWOo15c+Y8594dtJG4esRwM2qdYc5aRJXd/c339RnqOQhYkAcbEkgX5TrWxtjUMMmWjTVept2j4txMpm6OMGQAG/8A+y/YapcTzLnVM1Km0cN9sey/c49ayiy4hQ1/+ZTsr2/D7s+JMo6OXYAEux0AF2Y+A4mfqLaOycPiMv0ijTq5CSoqKrgE2vYMLa2HpNrDYSnTGWmiovRVCj0Ak5yaWiLnZ+bsDutjqvwYOue9kNMeTPlB9ZYMF7LtovbOKVIc875mHlTDA+s7xE48jHajnO7HsvXDVUr1cSzujBlVFCLccmJLMw8Cs6NESLbfkkexETgEREA0cXsuhV/xaNKpfjnpo1/+oGRtXcvZzccDh/w0kX+kCWCIBUqvs52W3HBp+Fqi/wBLCVze/cLZ+HwdSph6JSqLBCr16lzmF1ys5BuoIvbTjynS6z5VJNtBzNh5nkJ+ct9d5dpVq5FdmpqjHJTpE+7BGgNwe2bcz1NgL2kpdLlehx6fDIb6NnJDLoDfW4m6drqSUYqLaAi+XwuSeHDU8pE4vG16nxk68TbKTyu0w0qYXjxkHdbbf9FiidJL+yfRtZbdxtoNTx9BQRZ8yVOHwsvYHcS4U/hM53RxmThLBuRXNTHYZddayMW/lYP88tvOVPe9k+NaP0lPlhfjwn1EuKSq4vcPA1Kmf3RQniqMyofwjRfw2m3R3RwSIUXDU7FSt2Gd7EWNne7A275PRO99eNnO1HHcAr4XEPQqHVGy3+8OKt5qQfOdE2XirgSD9pGyuwuLQdqnZanehOjfhY+jHpIrdzbeemrp2lJIB1HA2PzBnM2WYnupkseOqrtk6SjzNK3hdsG4zKAOZ10HXvlgpVAwDA3B1BHAiUYs85d9r8E7x1H+RliIl5WIiIAiIgCIiAIiIBH7YwZrUKlJWCl0Kgm5AJGhNiDbwIM4btbcDa3vP8L3gHB0ekw8s7I3qon6Cid3xoH54w/sy2pUPaphO+pUpgf5Gc/KTmC9jFc/4uKpp3Ir1PmSn5TtUSOjuznWy/ZHgqZzVWqV9CMrEImoteyANccu1+ksWx9y8DhXFSjh1Djg7M9Rhpa6lycpsbaWljidGz2IiDgiIgFO9qVbLsysL2zZV/zA2+U5Ju7vKcPSWmKQbLfUkc2Lcwes6p7WHAwGqlr1UFhz4k/IGcNoYgBj9WSOSlX/AE1kMmKck6rxsnjtzW0dAw2+tRrAU0Hmv/bL9uNjc1L3ZNyouPDQH8x6zin/AIoQLLQC94R7+rS8eyjGvUxbBibLSYWvc6uhzG3wjs214kyrHhjG/tWtllZHafcdfiImgoEREAREQBERAEREAREQBERAEREAREQBERANfF4WnVRkqIrq2hV1DKfFToZXavs/2YxucGg/lLoPRWAlqiAVmjuHs1eGDpn+YM/9ZMnMHgaVFclGklNfuoiovooAm1EAREQBERAP/9k=" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+            <div class="audio-title">
+              Frumuseii Mei 3 
+            </div>
+            <div class="artist-name">
+              XSlayder feat IraphaHell
+            </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/frumuseii3.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+      </div>
+      &nbsp;
+      
+      <div class="audio-player">
+        <div class="audio-content">
+          <div class="audio-image">
+            <img src="https://cdn-icons-png.flaticon.com/128/2231/2231642.png" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+            <div class="audio-title">
+              Hai sa Dam Bacu'
+            </div>
+            <div class="artist-name">
+              #zerodoi
+            </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/bacu.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+      </div>
+      &nbsp;
+      
+      <div class="audio-player">
+        <div class="audio-content">
+          <div class="audio-image">
+            <img src="https://cdn-icons-png.flaticon.com/128/744/744465.png" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+            <div class="audio-title">
+              Prea Rapid Prea Furios
+            </div>
+            <div class="artist-name">
+              Parodie
+            </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/furios.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+      </div>
+      &nbsp;
+      
+       <div class="audio-player">
+        <div class="audio-content">
+          <div class="audio-image">
+            <img src="https://cdn-icons-png.flaticon.com/128/1087/1087460.png" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+            <div class="audio-title">
+              Un Trandafir Creste la Firida Mea
+            </div>
+            <div class="artist-name">
+              Pindu
+            </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/trandafir.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+      </div>
+      &nbsp;
+
+      <div class="audio-player">
+        <div class="audio-content">
+          <div class="audio-image">
+          <img src="https://cdn-icons-png.flaticon.com/128/5299/5299923.png" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+          <div class="audio-title">
+            Am Plecat sa Colectam
+          </div>
+          <div class="artist-name">
+            Haurentiu
+          </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/colectare.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        </div>
+        &nbsp; 
+        
+        <div class="audio-player">
+        <div class="audio-content">
+          <div class="audio-image">
+          <img src="https://cdn-icons-png.flaticon.com/128/804/804456.png" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+          <div class="audio-title">
+            Top de Apel Hazos
+          </div>
+          <div class="artist-name">
+            
+          </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/raspunde.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        </div>
+        &nbsp; 
+    
+        <div class="audio-player">
+        <div class="audio-content">
+          <div class="audio-image">
+          <img src="https://cdn-icons-png.flaticon.com/128/2395/2395796.png" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+          <div class="audio-title">
+            Te Cacai ca Vaca in Fata Portii
+          </div>
+          <div class="artist-name">
+            Bebe de la Targoviste
+          </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/vaca.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        </div>
+        &nbsp; 
+    
+       <div class="audio-player">
+        <div class="audio-content">
+          <div class="audio-image">
+            <img src="https://cdn-icons-png.flaticon.com/128/3077/3077443.png" alt="Audio Image">
+          </div>
+          <div class="audio-controls">
+            <div class="audio-title">
+              Turtle Song Persian Language
+            </div>
+            <div class="artist-name">
+              
+            </div>
+          </div>
+        </div>
+        <div class="audio-container">
+            <audio id="my-audio-2" controls>
+                <source src="music/turtle.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+      </div>
+      &nbsp;
+
+      <div class="audio-content">
+        <div class="audio-image">
+        <img src="https://i.imgur.com/P56wNdJ.png" alt="Audio Image">
+        </div>
+        <div class="audio-controls">
+        <div class="audio-title">
+          Asa sunt Zilele Mele AI Cover
+        </div>
+        <div class="artist-name">
+          Chef Catalin Scarlatescu
+        </div>
+        </div>
+      </div>
+      <div class="audio-container">
+          <audio id="my-audio-2" controls>
+              <source src="music/zilele mele scarlatescu.mp3" type="audio/mp3">
+              Your browser does not support the audio tag.
+          </audio>
+      </div>
+      </div>
+      &nbsp; 
+  
+      <div class="audio-player">
+      <div class="audio-content">
+        <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/7151/7151820.png" alt="Audio Image">
+        </div>
+        <div class="audio-controls">
+        <div class="audio-title">
+          Dragostea din Tei
+        </div>
+        <div class="artist-name">
+          Chef Catalin Scarlatescu
+        </div>
+        </div>
+      </div>
+      <div class="audio-container">
+          <audio id="my-audio-2" controls>
+              <source src="music/tei scarlatescu.mp3" type="audio/mp3">
+              Your browser does not support the audio tag.
+          </audio>
+      </div>
+      </div>
+      &nbsp;
+      
+      <div class="audio-player">
+      <div class="audio-content">
+        <div class="audio-image">
+        <img src="https://cdn-icons-png.flaticon.com/128/1642/1642901.png" alt="Audio Image">
+        </div>
+        <div class="audio-controls">
+        <div class="audio-title">
+          Trilogia Cacatului
+        </div>
+        <div class="artist-name">
+          Chef Catalin Scarlatescu
+        </div>
+        </div>
+      </div>
+      <div class="audio-container">
+          <audio id="my-audio-2" controls>
+              <source src="music/trilogie scarlatescu.mp3" type="audio/mp3">
+              Your browser does not support the audio tag.
+          </audio>
+      </div>
+      </div>
+      &nbsp;
+
+      <div class="audio-player">
+			  <div class="audio-content">
+				<div class="audio-image">
+				  <img src="https://cdn-icons-png.flaticon.com/128/5124/5124850.png" alt="Audio Image">
+				</div>
+				<div class="audio-controls">
+				  <div class="audio-title">
+					In The End AI Cover
+				  </div>
+				  <div class="artist-name">
+					Chef Florin Dumitrescu AI
+				  </div>
+				</div>
+			  </div>
+		  <div class="audio-container">
+			  <audio id="my-audio-2" controls>
+				  <source src="music/end dumitrescu.mp3" type="audio/mp3">
+				  Your browser does not support the audio tag.
+			  </audio>
+		  </div>
+			</div>
+			&nbsp;
+	  
+			<div class="audio-player">
+			  <div class="audio-content">
+				<div class="audio-image">
+				  <img src="https://cdn-icons-png.flaticon.com/128/1070/1070815.png" alt="Audio Image">
+				</div>
+				<div class="audio-controls">
+				  <div class="audio-title">
+					Mamaliga cu Carnati AI Cover
+				  </div>
+				  <div class="artist-name">
+					Chef Florin Dumitrescu AI
+				  </div>
+				</div>
+			  </div>
+		  <div class="audio-container">
+			  <audio id="my-audio-2" controls>
+				  <source src="music/mamaliga dumitrescu.mp3" type="audio/mp3">
+				  Your browser does not support the audio tag.
+			  </audio>
+		  </div>
+			</div>
+			&nbsp;
+			
+			<div class="audio-player">
+			  <div class="audio-content">
+				<div class="audio-image">
+				  <img src="https://cdn-icons-png.flaticon.com/128/1277/1277572.png" alt="Audio Image">
+				</div>
+				<div class="audio-controls">
+				  <div class="audio-title">
+					Un Trandafir Creste la Firida Mea
+				  </div>
+				  <div class="artist-name">
+					Chef Florin Dumitrescu AI
+				  </div>
+				</div>
+			  </div>
+		  <div class="audio-container">
+			  <audio id="my-audio-2" controls>
+				  <source src="music/trandafir dumitrescu.mp3" type="audio/mp3">
+				  Your browser does not support the audio tag.
+			  </audio>
+		  </div>
+			</div>
+			&nbsp;
+
+          <script>
+            const searchBox = document.getElementById('searchBox');
+            const placeholders = [
+              "Cauta maneaua ta preferata",
+              "Ia zi Vericule, ce cautam?",
+              "Ce ai chef sa asculti astazi?",
+              "Adrian Copilul Minune sau Nicolae Guta?",
+              "KPOOP sau Metal Greu",
+              "Navigheaza cu incredere in groapa de gunoi",
+              "Atentie, cade tencuiala!",
+              "Ce chef de chef vrei sa asculti astazi?",
+              "Te-ai pierdut si nu stii ce sa cauti?"
+              // Add more funny placeholders if needed
+            ];
+        
+            const randomIndex = Math.floor(Math.random() * placeholders.length);
+            searchBox.placeholder = placeholders[randomIndex];
+        
+            const audioPlayers = document.querySelectorAll('.audio-player');
+        
+            searchBox.addEventListener('input', () => {
+              const searchTerm = searchBox.value.toLowerCase();
+        
+              audioPlayers.forEach(player => {
+                const audioTitle = player.querySelector('.audio-title').textContent.toLowerCase();
+        
+                if (audioTitle.includes(searchTerm)) {
+                  player.style.display = 'block';
+                } else {
+                  player.style.display = 'none';
+                }
+              });
+            });
+          </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js" integrity="sha512-vONptKEoKbP1gaC5UkbYDa9OPr04ur4bxaaqT7DAJxGHB2oogtseCPrl5e5hPFokGYotlGNV4d+GM593ka7iNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const players = document.querySelectorAll('audio'); // Select all audio elements
+                players.forEach(function (player) {
+                    new Plyr(player, {
+                        controls: ['play', 'progress', 'current-time', 'mute']
+                    });
+                });
+            });
+        </script>
+            <script>
+                window.addEventListener("load", () => {
+                    const loader = document.querySelector(".loader");
+                    const body = document.body;
+        
+                    loader.classList.add("loader--hidden");
+                    body.classList.remove("no-scroll"); // Remove the "no-scroll" class to reveal content
+        
+                    loader.addEventListener("transitionend", () => {
+                        body.removeChild(loader);
+                    });
+                });
+            </script>
+                    <script src="assets/js/main.js"></script>
+                    <script src="JS/icon.js"></script>
+        </body>
+        
+        </html>
+        

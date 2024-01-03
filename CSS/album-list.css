@@ -1,0 +1,60 @@
+.album-list {
+  display: flex;
+  overflow-x: scroll; /* Enable scrolling without always showing the scrollbar */
+  white-space: nowrap;
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+  scrollbar-width: none; /* Remove scrollbar for Firefox */
+  -ms-overflow-style: none; /* Remove scrollbar for IE/Edge */
+  -webkit-tap-highlight-color: transparent;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.album-list::-webkit-scrollbar {
+  display: none; /* Remove scrollbar for Chrome/Safari/Opera */
+}
+
+.album-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.album-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    border-radius: 10px;
+ }
+
+.album-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.album-feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+.album-text {
+  flex: 1;
+}
+.album-cover {
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.album-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

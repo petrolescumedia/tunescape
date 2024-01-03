@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <div class="loader"></div>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="CSS/album-list.css">
+        <link rel="stylesheet" href="CSS/album-grid.css">
+        <link rel="stylesheet" href="CSS/audio-player.css">
+        <link rel="stylesheet" href="CSS/loader.css">
+        <!-- Add more stylesheets here -->
+    
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Koulen' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+    
+        <!-- External Libraries -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.css">
+        <title>Responsive bottom navigation</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">TuneScape</a>
+            <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        
+                        <li class="nav__item">
+                            <a href="albums.html" class="nav__link active-link">
+                              <i class='bx bx-album nav__icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="music.html" class="nav__link">
+                              <i class='bx bx-music nav__icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">
+                                <i class='bx bx-home-alt nav__icon'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="radio.html" class="nav__link">
+                              <i class='bx bx-radio bx-flip-horizontal nav__icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="altele.html" class="nav__link">
+                              <i class='bx bx-food-menu nav__icon' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="https://cdn-icons-png.flaticon.com/128/26/26805.png" alt="" class="nav__img">
+            </nav>
+        </header>
+        <br><br><br>
+        <h3>Toate albumele</h3>
+        <br>
+        <div class="album-list-grid">
+          <div class="album">
+            <a href="dumitrescu.html">
+              <img src="https://i.imgur.com/6UJxVLX.png" alt="Album 1 Icon">
+              <span class="album-title">Chefi la Cutite Soundtrack</span>
+            </a>
+          </div>
+          
+          <div class="album">
+            <a href="scarlatescu.html">
+              <img src="https://i.imgur.com/BiiSrih.png" alt="Album 2 Icon">
+              <span class="album-title">Chef Sorin Bontea AI Covers</span>
+            </a>
+          </div>
+
+          <div class="album">
+            <a href="dumitrescu.html">
+              <img src="https://i.imgur.com/MOqbm8G.png" alt="Album 1 Icon">
+              <span class="album-title">Chef Florin Dumitrescu AI Covers</span>
+            </a>
+          </div>
+          
+          <div class="album">
+            <a href="scarlatescu.html">
+              <img src="https://i.imgur.com/NkMkUlO.png" alt="Album 2 Icon">
+              <span class="album-title">Chef Catalin Scarlatescu AI Covers</span>
+            </a>
+          </div>
+          
+          <div class="album">
+            <a href="manele.html">
+              <img src="https://cdn-icons-png.flaticon.com/256/6280/6280215.png" alt="Album 1 Icon">
+              <span class="album-title">Manele</span>
+            </a>
+          </div>
+          
+          <div class="album">
+            <a href="international.html">
+              <img src="https://cdn-icons-png.flaticon.com/256/4392/4392556.png" alt="Album 2 Icon">
+              <span class="album-title">Muzica Internationala</span>
+            </a>
+          </div>
+          <div class="album">
+            <a href="romania.html">
+              <img src="https://cdn-icons-png.flaticon.com/128/9312/9312283.png" alt="Album 1 Icon">
+              <span class="album-title">Muzica Romaneasca</span>
+            </a>
+          </div>
+          
+          <div class="album">
+            <a href="salubris.html">
+              <img src="https://cdn-icons-png.flaticon.com/128/3071/3071694.png" alt="Album 2 Icon">
+              <span class="album-title">Groapa de Gunoi a Internetului</span>
+            </a>
+          </div>  
+          <div class="album">
+            <a href="index.html">
+              <img src="https://cdn-icons-png.flaticon.com/128/10753/10753252.png" alt="Album 2 Icon">
+              <span class="album-title">Villager AI Cover</span>
+            </a>
+          </div>                    
+          <div class="album">
+            <a href="index.html">
+              <img src="https://cdn-icons-png.flaticon.com/128/10753/10753252.png" alt="Album 2 Icon">
+              <span class="album-title">Colinde 2023</span>
+            </a>
+          </div>                                 
+          <!-- Add more album items as needed -->
+        </div>
+        <br>
+</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js" integrity="sha512-vONptKEoKbP1gaC5UkbYDa9OPr04ur4bxaaqT7DAJxGHB2oogtseCPrl5e5hPFokGYotlGNV4d+GM593ka7iNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const players = document.querySelectorAll('audio'); // Select all audio elements
+                players.forEach(function (player) {
+                    new Plyr(player, {
+                        controls: ['play', 'progress', 'current-time', 'mute']
+                    });
+                });
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js" integrity="sha512-vONptKEoKbP1gaC5UkbYDa9OPr04ur4bxaaqT7DAJxGHB2oogtseCPrl5e5hPFokGYotlGNV4d+GM593ka7iNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const players = document.querySelectorAll('audio'); // Select all audio elements
+                players.forEach(function (player) {
+                    new Plyr(player, {
+                        controls: ['play', 'progress', 'current-time', 'mute']
+                    });
+                });
+            });
+        </script>
+            <script>
+                window.addEventListener("load", () => {
+                    const loader = document.querySelector(".loader");
+                    const body = document.body;
+        
+                    loader.classList.add("loader--hidden");
+                    body.classList.remove("no-scroll"); // Remove the "no-scroll" class to reveal content
+        
+                    loader.addEventListener("transitionend", () => {
+                        body.removeChild(loader);
+                    });
+                });
+            </script>        
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
