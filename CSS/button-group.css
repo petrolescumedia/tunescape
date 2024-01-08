@@ -4,6 +4,10 @@
     --button-color-2: #ffb366; /* Change this color */
   }
 
+  .body {
+    align-items: center;
+  }
+
   .button-group {
     display: flex;
     justify-content: center;
@@ -49,6 +53,9 @@
     margin: 20px 0;
   }
 
+  .example {
+    text-align: center;
+  }
   .example input[type="text"] {
     padding: 5px;
     font-size: 14px;

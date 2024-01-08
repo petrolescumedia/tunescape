@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Music Form</title>
+  <style>
+    /* Add your CSS styles here */
+    /* Just some basic styling for the form */
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <form id="musicForm">
+    <label for="iconUrl">Icon URL:</label>
+    <input type="text" id="iconUrl" name="iconUrl" placeholder="Enter icon URL"><br>
+    
+    <label for="audioImageUrl">Audio Image URL:</label>
+    <input type="text" id="audioImageUrl" name="audioImageUrl" placeholder="Enter audio image URL"><br>
+    
+    <label for="audioTitle">Audio Title:</label>
+    <input type="text" id="audioTitle" name="audioTitle" placeholder="Enter audio title"><br>
+    
+    <label for="artistName">Artist Name:</label>
+    <input type="text" id="artistName" name="artistName" placeholder="Enter artist name"><br>
+    
+    <label for="audioSource">Audio Source:</label>
+    <input type="text" id="audioSource" name="audioSource" placeholder="Enter audio source URL"><br>
+    
+    <button type="button" onclick="generateCode()">Generate Code</button>
+  </form>
+
+  <div id="generatedCode"></div>
+
+  <script>
+    function generateCode() {
+      const iconUrl = document.getElementById('iconUrl').value || ' ';
+      const audioImageUrl = document.getElementById('audioImageUrl').value || ' ';
+      const audioTitle = document.getElementById('audioTitle').value || ' ';
+      const artistName = document.getElementById('artistName').value || ' ';
+      const audioSource = document.getElementById('audioSource').value || ' ';
+      
+      const generatedCode = `
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="${iconUrl}" alt="Icon">
+          </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="${audioImageUrl}" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                ${audioTitle}
+              </div>
+              <div class="artist-name">
+                ${artistName}
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+            <audio controls>
+              <source src="${audioSource}" type="audio/mp3">
+              Your browser does not support the audio tag.
+            </audio>
+          </div>
+        </div>
+      `;
+      
+      document.getElementById('generatedCode').innerText = generatedCode;
+    }
+  </script>
+</body>
+</html>

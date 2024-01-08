@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="CSS/album-grid.css">
         <link rel="stylesheet" href="CSS/audio-player.css">
         <link rel="stylesheet" href="CSS/loader.css">
+        <link rel="stylesheet" href="CSS/video-player.css">
         <!-- Add more stylesheets here -->
     
         <!-- Fonts -->
@@ -24,6 +25,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     
         <title>Radio</title>
     </head>
@@ -48,7 +51,7 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="index.html" class="nav__link">
+                            <a href="home.html" class="nav__link">
                                 <i class='bx bx-home-alt nav__icon'></i>
                             </a>
                         </li>
@@ -113,7 +116,7 @@
 </html>
 <html>
   <body>
-    <br><br><br>
+    <br><br><br><br>
     <h3><strong>Radio</strong></h3>
     <br>
     <div class="audio-player">
@@ -135,7 +138,7 @@
       </div>
       <div class="audio-container">
           <audio id="my-audio-2" controls>
-              <source src="https://listen.radioking.com/radio/625108/stream/687376" type="audio/mp3">
+              <source src="https://www.radioking.com/play/tunescape-fm2" type="audio/mp3">
               Your browser does not support the audio tag.
           </audio>
       </div>
@@ -168,5 +171,110 @@
         </div>
       </div>
       &nbsp;
+
+      
+    <div class="audio-player">
+      <div class="icon-container">
+        <img class="icon-radio" src="https://cdn-icons-png.flaticon.com/128/3049/3049365.png" alt="Icon">
+    </div>
+      <div class="audio-content">
+        <div class="audio-image">
+          <img src="https://cdn-icons-png.flaticon.com/128/2071/2071392.png" alt="Audio Image">
+        </div>
+        <div class="audio-controls">
+          <div class="audio-title">
+            Radio TGB 
+          </div>
+          <div class="artist-name">
+            The best house/festival radio station
+          </div>
+        </div>
+      </div>
+      <div class="audio-container">
+          <audio id="my-audio-2" controls>
+              <source src="http://radio.thetigerbeast.ovh:8000/listen.pls" type="audio/mp3">
+              Your browser does not support the audio tag.
+          </audio>
+      </div>
+    </div>
+    &nbsp;
+
+    <div class="audio-player">
+      <div class="icon-container">
+        <img class="icon-radio" src="https://cdn-icons-png.flaticon.com/128/3049/3049365.png" alt="Icon">
+    </div>
+      <div class="audio-content">
+        <div class="audio-image">
+          <img src="https://www.digifm.ro/static/theme-repo/bin/images/logo-digifm.png" alt="Audio Image">
+        </div>
+        <div class="audio-controls">
+          <div class="audio-title">
+            DigiFM
+          </div>
+          <div class="artist-name">
+            Ca sa stii
+          </div>
+        </div>
+      </div>
+      <div class="audio-container">
+          <audio id="my-audio-2" controls>
+              <source src="http://edge76.rdsnet.ro:84/digifm/digifm.mp3" type="audio/mp3">
+              Your browser does not support the audio tag.
+          </audio>
+      </div>
+    </div>
+    &nbsp;
+
+    <div class="audio-player">
+      <div class="icon-container">
+        <img class="icon-radio" src="https://cdn-icons-png.flaticon.com/128/3049/3049365.png" alt="Icon">
+    </div>
+      <div class="audio-content">
+        <div class="audio-image">
+          <img src="data:image/png;base64,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" alt="Audio Image">
+        </div>
+        <div class="audio-controls">
+          <div class="audio-title">
+            Radio Trinitas
+          </div>
+          <div class="artist-name">
+            
+          </div>
+        </div>
+      </div>
+      <div class="audio-container">
+          <audio id="my-audio-2" controls>
+              <source src="http://live.radiotrinitas.ro:8003/%7CRadio" type="audio/mp3">
+              Your browser does not support the audio tag.
+          </audio>
+      </div>
+    </div>
+    &nbsp;
+
+    <div class="audio-player">
+      <div class="icon-container">
+        <img class="icon-radio" src="https://cdn-icons-png.flaticon.com/128/3049/3049365.png" alt="Icon">
+    </div>
+      <div class="audio-content">
+        <div class="audio-image">
+          <img src="https://asculta-live.com/files/styles/media/public/logo/radio-romania-iasi.jpg?itok=fk_6zXI-" alt="Audio Image">
+        </div>
+        <div class="audio-controls">
+          <div class="audio-title">
+            Radio Iasi
+          </div>
+          <div class="artist-name">
+            
+          </div>
+        </div>
+      </div>
+      <div class="audio-container">
+          <audio id="my-audio-2" controls>
+              <source src="http://89.238.227.6:8200/;" type="audio/mp3">
+              Your browser does not support the audio tag.
+          </audio>
+      </div>
+    </div>
+    &nbsp;
       
       <br>

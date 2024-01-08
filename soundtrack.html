@@ -1,143 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-61EXK661VN"></script>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="CSS/album-list.css">
-	<link rel="stylesheet" href="CSS/bottom-nav.css">
-	<link rel="stylesheet" href="CSS/audio-player.css">
-	<link rel="stylesheet" href="CSS/index.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Koulen' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
-	<script src="https://kit.fontawesome.com/897d001a8e.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.css" integrity="sha512-yexU9hwne3MaLL2PG+YJDhaySS9NWcj6z7MvUDSoMhwNghPgXgcvYgVhfj4FMYpPh1Of7bt8/RK5A0rQ9fPMOw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-<div class="loader"></div>
-  <img src="https://i.imgur.com/HFX2KZK.png" alt="Florin Dumitrescu" class="responsive-image">
- 
- 
-   <div class="audio-player">
-    <div class="audio-content">
-      <div class="audio-image">
-        <img src="https://i.imgur.com/jL0B0te.png" alt="Audio Image">
-      </div>
-      <div class="audio-controls">
-        <div class="audio-title">
-          Counter Intelligence
-        </div>
-        <div class="artist-name">
-          Thriller Media Tracks
-        </div>
-      </div>
-    </div>
-    <div class="audio-player-controls">
-      <audio controls>
-        <source src="music/counter.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-  </div>
-  &nbsp;
+    <html lang="en">
+      <div class="loader"></div>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="CSS/album-list.css">
+        <link rel="stylesheet" href="CSS/album-grid.css">
+        <link rel="stylesheet" href="CSS/audio-player.css">
+        <link rel="stylesheet" href="CSS/loader.css">
+        <link rel="stylesheet" href="CSS/video-player.css">
+        <!-- Add more stylesheets here -->
+    
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Koulen' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+    
+        <!-- External Libraries -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    
+        <title>Chefi la Cutite OST</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">TuneScape</a>
+            <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        
+                        <li class="nav__item">
+                            <a href="albums.html" class="nav__link active-link">
+                              <i class='bx bx-album nav__icon' ></i>
+                            </a>
+                        </li>
 
-   <div class="audio-player">
-    <div class="audio-content">
-      <div class="audio-image">
-        <img src="https://i.imgur.com/jL0B0te.png" alt="Audio Image">
-      </div>
-      <div class="audio-controls">
-        <div class="audio-title">
-          Spymaster
-        </div>
-        <div class="artist-name">
-          Thriller Media Tracks
-        </div>
-      </div>
-    </div>
-    <div class="audio-player-controls">
-      <audio controls>
-        <source src="music/spymaster.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-  </div>
-  &nbsp;
-  
-   <div class="audio-player">
-    <div class="audio-content">
-      <div class="audio-image">
-        <img src="https://i.imgur.com/jL0B0te.png" alt="Audio Image">
-      </div>
-      <div class="audio-controls">
-        <div class="audio-title">
-          Spymaster Intens
-        </div>
-        <div class="artist-name">
-          Nicolae Guta
-        </div>
-      </div>
-    </div>
-    <div class="audio-player-controls">
-      <audio controls>
-        <source src="music/spymaster intens.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-  </div>
-  &nbsp;
+                        <li class="nav__item">
+                            <a href="music.html" class="nav__link">
+                              <i class='bx bx-music nav__icon' ></i>
+                            </a>
+                        </li>
 
-   <div class="audio-player">
-    <div class="audio-content">
-      <div class="audio-image">
-        <img src="https://i.imgur.com/jL0B0te.png" alt="Audio Image">
-      </div>
-      <div class="audio-controls">
-        <div class="audio-title">
-          Spymaster Scurt
-        </div>
-        <div class="artist-name">
-          Thriller Media Tracks
-        </div>
-      </div>
-    </div>
-    <div class="audio-player-controls">
-      <audio controls>
-        <source src="music/spymaster scurt.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
-  </div>
-  &nbsp;  
-  
+                        <li class="nav__item">
+                            <a href="home.html" class="nav__link">
+                                <i class='bx bx-home-alt nav__icon'></i>
+                            </a>
+                        </li>
 
-  
-  
+                        <li class="nav__item">
+                            <a href="radio.html" class="nav__link">
+                              <i class='bx bx-radio bx-flip-horizontal nav__icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="altele.html" class="nav__link">
+                              <i class='bx bx-food-menu nav__icon' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="https://cdn-icons-png.flaticon.com/128/26/26805.png" alt="" class="nav__img">
+            </nav>
+        </header>
+        <br><br><br><br>
+    <h3><strong>Chefi la Cutite OST</strong></h3>
+    <br>
+    <div class="audio-player">
+      <div class="audio-content">
+        <div class="audio-image">
+          <img src="https://i.imgur.com/jL0B0te.png alt="Audio Image">
+        </div>
+        <div class="audio-controls">
+          <div class="audio-title">
+            Spymaster Scurt
+          </div>
+          <div class="artist-name">
+            Thriller Media Tracks
+          </div>
+        </div>
+      </div>
+      <div class="audio-container">
+          <audio id="my-audio-2" controls>
+            <source src="music/spymaster scurt.mp3" type="audio/mpeg">
+              Your browser does not support the audio tag.
+          </audio>
+      </div>
+    </div>
+
+    <div class="audio-player">
+      <div class="audio-content">
+        <div class="audio-image">
+          <img src="https://i.imgur.com/jL0B0te.png" alt="Audio Image">
+        </div>
+        <div class="audio-controls">
+          <div class="audio-title">
+            Spymaster Intens
+          </div>
+          <div class="artist-name">
+            Thriller Media Tracks
+          </div>
+        </div>
+      </div>
+      <div class="audio-container">
+          <audio id="my-audio-2" controls>
+            <source src="music/spymaster intens.mp3" type="audio/mpeg">
+              Your browser does not support the audio tag.
+          </audio>
+      </div>
+    </div>
+
+    <div class="audio-player">
+      <div class="audio-content">
+        <div class="audio-image">
+          <img src="https://i.imgur.com/jL0B0te.png" alt="Audio Image">
+        </div>
+        <div class="audio-controls">
+          <div class="audio-title">
+            Spymaster
+          </div>
+          <div class="artist-name">
+            Thriller Media Tracks
+          </div>
+        </div>
+      </div>
+      <div class="audio-container">
+          <audio id="my-audio-2" controls>
+            <source src="music/spymaster.mp3" type="audio/mpeg">
+              Your browser does not support the audio tag.
+          </audio>
+      </div>
+    </div>
+
+    <div class="audio-player">
+      <div class="audio-content">
+        <div class="audio-image">
+          <img src="https://i.imgur.com/jL0B0te.png" alt="Audio Image">
+        </div>
+        <div class="audio-controls">
+          <div class="audio-title">
+            Counter Intelligence
+          </div>
+          <div class="artist-name">
+            Thriller Media Tracks
+          </div>
+        </div>
+      </div>
+      <div class="audio-container">
+          <audio id="my-audio-2" controls>
+              <source src="music/counter.mp3" type="audio/mp3">
+              Your browser does not support the audio tag.
+          </audio>
+      </div>
+    </div>
+	  
 <a href="music.html"><img src="https://i.imgur.com/jMzSZKP.png" alt="Florin Dumitrescu" class="responsive-image"></a>
-
-  <div id="menu" class="section">
-    <div class="topnav" id="myTopnav">
-      <!-- Top Navigation content... -->
-    </div>
-  </div>
-  </div>
-    <nav class="bottom-nav">
-      <div class="nav-item">
-	  <div class="nav-item">
-        <a href="albums.html"><img src="https://cdn-icons-png.flaticon.com/128/10742/10742850.png" alt="Albume"></a>
-      </div>
-      <div class="nav-item">
-        <a href="index.html"><img src="https://cdn-icons-png.flaticon.com/128/3917/3917074.png" alt="Menu"></a>
-      </div>
-      <div class="nav-item">
-        <a href="top.html"><img src="https://cdn-icons-png.flaticon.com/128/9246/9246465.png" alt="top"></a>
-      </div>
-    </nav>
-  </div>
+ 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js" integrity="sha512-vONptKEoKbP1gaC5UkbYDa9OPr04ur4bxaaqT7DAJxGHB2oogtseCPrl5e5hPFokGYotlGNV4d+GM593ka7iNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <div class="loader"></div>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="CSS/album-list.css">
+        <link rel="stylesheet" href="CSS/album-grid.css">
+        <link rel="stylesheet" href="CSS/audio-player.css">
+        <link rel="stylesheet" href="CSS/loader.css">
+        <link rel="stylesheet" href="CSS/video-player.css">
+        <!-- Add more stylesheets here -->
+    
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Koulen' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+    
+        <!-- External Libraries -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+    
+        <title>Acasa</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">TuneScape</a>
+            <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        
+                        <li class="nav__item">
+                            <a href="albums.html" class="nav__link">
+                              <i class='bx bx-album nav__icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="music.html" class="nav__link">
+                              <i class='bx bx-music nav__icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="home.html" class="nav__link active-link">
+                                <i class='bx bx-home-alt nav__icon'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="radio.html" class="nav__link">
+                              <i class='bx bx-radio bx-flip-horizontal nav__icon' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="altele.html" class="nav__link">
+                              <i class='bx bx-food-menu nav__icon' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="https://cdn-icons-png.flaticon.com/128/26/26805.png" alt="" class="nav__img">
+            </nav>
+        </header>
+        <br>
+
+        <!--=============== MELODIA SEZONULUI ===============-->
+
+        <br><br>
+        <h3>Melodia Saptamanii</h3>
+        <div class="audio-player">
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/3578/3578291.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Beau Vinul cu Borcanul
+              </div>
+              <div class="artist-name">
+                Nicu Paleru
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/borcanu.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+        &nbsp;
+
+
+        <!--=============== ALBUME ===============-->
+            <h3>Albume Populare</h3>
+          <br>
+              <div class="album-list">
+                <div class="album-item">
+                  <a href="soundtrack.html">
+                    <div class="album-image">
+                      <img src="https://i.imgur.com/6UJxVLX.png" alt="Album 1">
+                    </div>
+                  </a>
+                </div>
+                <div class="album-item">
+                  <a href="scarlatescu.html">
+                    <div class="album-image">
+                      <img src="https://i.imgur.com/NkMkUlO.png" alt="Album 1">
+                    </div>
+                  </a>
+                </div>
+                <div class="album-item">
+                  <a href="dumitrescu.html">
+                    <div class="album-image">
+                      <img src="https://i.imgur.com/MOqbm8G.png" alt="Album 2">
+                    </div>
+                  </a>
+                </div>
+                <div class="album-item">
+                  <a href="bontea.html">
+                    <div class="album-image">
+                      <img src="https://i.imgur.com/BiiSrih.png" alt="Album 2">
+                    </div>
+                  </a>
+                </div>
+                <div class="album-item">
+                  <a href="manele.html">
+                    <div class="album-image">
+                      <img src="https://i.discogs.com/qbw5gUX2ePdEc-wQUmxPz93SDFkotY514bqSq_JA9Pc/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMjgw/MTIzLTE1NTEyODQz/MzYtNDUyOS5qcGVn.jpeg" alt="manele">
+                    </div>
+                  </a>
+                </div>
+                <div class="album-item">
+                  <a href="international.html">
+                    <div class="album-image">
+                      <img src="https://i.imgur.com/THGG2ls.png" alt="Album 1">
+                    </div>
+                  </a>
+                </div>
+                <div class="album-item">
+                  <a href="villager.html">
+                    <div class="album-image">
+                      <img src="https://i.imgur.com/2GseU3J.png" alt="Album 2">
+                    </div>
+                  </a>
+                </div>
+              </div>
+              </body>
+        <br>
+        <h3>2023 Recap</h3>
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/128/2583/2583344.png" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/256/8143/8143924.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Instrumentala Criminala
+              </div>
+              <div class="artist-name">
+                POC POC POC
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/criminala.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+<br>
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/128/2583/2583319.png" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/9004/9004844.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Jingle Bells Balkan Style
+              </div>
+              <div class="artist-name">
+                Turcu
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/Jingle Bells Balkan.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+<br>
+        <div class="audio-player">
+          <div class="icon-container">
+            <img class="icon" src="https://cdn-icons-png.flaticon.com/128/2583/2583434.png" alt="Icon">
+        </div>
+          <div class="audio-content">
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/4507/4507464.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Zarzavat
+              </div>
+              <div class="artist-name">
+                Metin Taifa
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/zarzavat.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+<br>
+        <div class="audio-player">
+          <div class="audio-content">
+            <div class="icon-container">
+              <img class="icon" src="https://cdn-icons-png.flaticon.com/128/2583/2583290.png" alt="Icon">
+          </div>
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/2360/2360896.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Eu sunt Popa Nae
+              </div>
+              <div class="artist-name">
+                Popa si Dascalul
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-2" controls>
+                  <source src="music/nae.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+<br>
+        <div class="audio-player">
+          <div class="audio-content">
+            <div class="icon-container">
+              <img class="icon" src="https://cdn-icons-png.flaticon.com/128/2583/2583290.png" alt="Icon">
+          </div>
+            <div class="audio-image">
+              <img src="https://cdn-icons-png.flaticon.com/128/9312/9312411.png" alt="Audio Image">
+            </div>
+            <div class="audio-controls">
+              <div class="audio-title">
+                Bosanska Artiljerija
+              </div>
+              <div class="artist-name">
+                Bosnian Army
+              </div>
+            </div>
+          </div>
+          <div class="audio-container">
+              <audio id="my-audio-42" controls>
+                  <source src="music/bosnia.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+              </audio>
+          </div>
+        </div>
+<br>
+<h3>Chefi la Cutite Albums</h3>
+<br>
+    <div class="album-list">
+      <div class="album-item">
+        <a href="soundtrack.html">
+          <div class="album-image">
+            <img src="https://i.imgur.com/6UJxVLX.png" alt="Album 1">
+          </div>
+        </a>
+      </div>
+      <div class="album-item">
+        <a href="scarlatescu.html">
+          <div class="album-image">
+            <img src="https://i.imgur.com/NkMkUlO.png" alt="Album 1">
+          </div>
+        </a>
+      </div>
+      <div class="album-item">
+        <a href="dumitrescu.html">
+          <div class="album-image">
+            <img src="https://i.imgur.com/MOqbm8G.png" alt="Album 2">
+          </div>
+        </a>
+      </div>
+      <div class="album-item">
+        <a href="bontea.html">
+          <div class="album-image">
+            <img src="https://i.imgur.com/BiiSrih.png" alt="Album 2">
+          </div>
+        </a>
+      </div>
+    </div>
+    <br>
+            <h3>Lansari Recente</h3>
+            <div class="audio-player">
+              <div class="audio-content">
+                <div class="icon-container">
+                  <img class="icon" src="https://cdn-icons-png.flaticon.com/128/891/891447.png" alt="Icon">
+              </div>
+                <div class="audio-image">
+                  <img src="https://cdn-icons-png.flaticon.com/128/588/588355.png" alt="Audio Image">
+                </div>
+                <div class="audio-controls">
+                  <div class="audio-title">
+                    GTA IV Theme Song
+                  </div>
+                  <div class="artist-name">
+                    RockStar Games
+                  </div>
+                </div>
+              </div>
+              <div class="audio-container">
+                  <audio id="my-audio-2" controls>
+                      <source src="music/gta4.mp3" type="audio/mp3">
+                      Your browser does not support the audio tag.
+                  </audio>
+              </div>
+            </div>
+          
+                <div class="audio-player">
+                  <div class="audio-content">
+                    <div class="icon-container">
+                      <img class="icon" src="https://cdn-icons-png.flaticon.com/128/891/891447.png" alt="Icon">
+                  </div>
+                  <div class="audio-image">
+                  <img src="https://cdn-icons-png.flaticon.com/128/1686/1686030.png" alt="Audio Image">
+                  </div>
+                  <div class="audio-controls">
+                  <div class="audio-title">
+                  Grass Skirt Chase
+                  </div>
+                  <div class="artist-name">
+                  Spongebob OST
+                  </div>
+                  </div>
+                  </div>
+                  <div class="audio-container">
+                  <audio controls>
+                  <source src="music/skirt.mp3" type="audio/mp3">
+                  Your browser does not support the audio tag.
+                  </audio>
+                  </div>
+                  </div>
+                  <br>
+
+            <h3>Albume</h3>
+            <div class="album-list-grid">
+              <div class="album">
+                <a href="dumitrescu.html">
+                  <img src="https://i.imgur.com/6UJxVLX.png" alt="Album 1 Icon">
+                  <span class="album-title">Chefi la Cutite Soundtrack</span>
+                </a>
+              </div>
+              
+              <div class="album">
+                <a href="scarlatescu.html">
+                  <img src="https://i.imgur.com/BiiSrih.png" alt="Album 2 Icon">
+                  <span class="album-title">Chef Sorin Bontea AI Covers</span>
+                </a>
+              </div>
+    
+              <div class="album">
+                <a href="dumitrescu.html">
+                  <img src="https://i.imgur.com/MOqbm8G.png" alt="Album 1 Icon">
+                  <span class="album-title">Chef Florin Dumitrescu AI Covers</span>
+                </a>
+              </div>
+              
+              <div class="album">
+                <a href="scarlatescu.html">
+                  <img src="https://i.imgur.com/NkMkUlO.png" alt="Album 2 Icon">
+                  <span class="album-title">Chef Catalin Scarlatescu AI Covers</span>
+                </a>
+              </div>
+              
+              <div class="album">
+                <a href="manele.html">
+                  <img src="https://cdn-icons-png.flaticon.com/256/6280/6280215.png" alt="Album 1 Icon">
+                  <span class="album-title">Manele</span>
+                </a>
+              </div>
+              
+              <div class="album">
+                <a href="international.html">
+                  <img src="https://cdn-icons-png.flaticon.com/256/4392/4392556.png" alt="Album 2 Icon">
+                  <span class="album-title">Muzica Internationala</span>
+                </a>
+              </div>
+              <div class="album">
+                <a href="romania.html">
+                  <img src="https://cdn-icons-png.flaticon.com/128/9312/9312283.png" alt="Album 1 Icon">
+                  <span class="album-title">Muzica Romaneasca</span>
+                </a>
+              </div>
+              
+              <div class="album">
+                <a href="salubris.html">
+                  <img src="https://cdn-icons-png.flaticon.com/128/3071/3071694.png" alt="Album 2 Icon">
+                  <span class="album-title">Groapa de Gunoi a Internetului</span>
+                </a>
+              </div>  
+              <div class="album">
+                <a href="index.html">
+                  <img src="https://i.imgur.com/2GseU3J.png" alt="Album 2 Icon">
+                  <span class="album-title">Villager AI Cover</span>
+                </a>
+              </div>                    
+              <div class="album">
+                <a href="index.html">
+                  <img src="https://cdn-icons-png.flaticon.com/128/10753/10753252.png" alt="Album 2 Icon">
+                  <span class="album-title">Colinde 2023</span>
+                </a>
+              </div>                                 
+              <!-- Add more album items as needed -->
+            </div>
+            <br>
+
+            <h3>Melodie uitata de Dumnezeu</h3>
+            <div class="audio-player">
+              <div class="audio-content">
+                <div class="audio-image">
+                <img src="https://cdn-icons-png.flaticon.com/128/5299/5299923.png" alt="Audio Image">
+                </div>
+                <div class="audio-controls">
+                <div class="audio-title">
+                  Am Plecat sa Colectam
+                </div>
+                <div class="artist-name">
+                  Haurentiu
+                </div>
+                </div>
+              </div>
+              <div class="audio-container">
+                  <audio id="my-audio-2" controls>
+                      <source src="music/colectare.mp3" type="audio/mp3">
+                      Your browser does not support the audio tag.
+                  </audio>
+              </div>
+              </div>
+              &nbsp; 
+
+            <h3>Discoteca Anilor 80'</h3>
+            <div class="audio-player">
+              <div class="audio-content">
+                <div class="audio-image">
+                  <img src="https://cdn-icons-png.flaticon.com/128/3211/3211473.png" alt="Audio Image">
+                </div>
+                <div class="audio-controls">
+                  <div class="audio-title">
+                    The Final Countdown
+                  </div>
+                  <div class="artist-name">
+                    Europe
+                  </div>
+                </div>
+              </div>
+              <div class="audio-container">
+                  <audio id="my-audio-2" controls>
+                      <source src="music/countdown.mp3" type="audio/mp3">
+                      Your browser does not support the audio tag.
+                  </audio>
+              </div>
+            </div>
+            &nbsp;
+
+            <div class="audio-player">
+              <div class="audio-content">
+                <div class="audio-image">
+                  <img src="https://cdn-icons-png.flaticon.com/128/677/677786.png" alt="Audio Image">
+                </div>
+                <div class="audio-controls">
+                  <div class="audio-title">
+                    Never Gonna Give You Up
+                  </div>
+                  <div class="artist-name">
+                    Rick Astley
+                  </div>
+                </div>
+              </div>
+              <div class="audio-container">
+                  <audio id="my-audio-2" controls>
+                      <source src="music/rickrooll.mp3" type="audio/mp3">
+                      Your browser does not support the audio tag.
+                  </audio>
+              </div>
+            </div>
+            &nbsp;
+
+            <div class="audio-player">
+              <div class="audio-content">
+                <div class="audio-image">
+                  <img src="https://cdn-icons-png.flaticon.com/128/11729/11729659.png" alt="Audio Image">
+                </div>
+                <div class="audio-controls">
+                  <div class="audio-title">
+                    Chery Chery Lady
+                  </div>
+                  <div class="artist-name">
+                    Modern Talking
+                  </div>
+                </div>
+              </div>
+              <div class="audio-container">
+                  <audio id="my-audio-2" controls>
+                      <source src="music/lady.mp3" type="audio/mp3">
+                      Your browser does not support the audio tag.
+                  </audio>
+              </div>
+            </div>
+            &nbsp;
+    <br>
+    
+            </nav>
+            <a href="music.html"><img src="https://i.imgur.com/nQi8fUe.png" alt="Florin Dumitrescu" class="responsive-image"></a>
+        </body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js" integrity="sha512-vONptKEoKbP1gaC5UkbYDa9OPr04ur4bxaaqT7DAJxGHB2oogtseCPrl5e5hPFokGYotlGNV4d+GM593ka7iNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const players = document.querySelectorAll('audio'); // Select all audio elements
+                players.forEach(function (player) {
+                    new Plyr(player, {
+                        controls: ['play', 'progress', 'current-time', 'mute']
+                    });
+                });
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.8/plyr.min.js" integrity="sha512-vONptKEoKbP1gaC5UkbYDa9OPr04ur4bxaaqT7DAJxGHB2oogtseCPrl5e5hPFokGYotlGNV4d+GM593ka7iNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const players = document.querySelectorAll('audio'); // Select all audio elements
+                players.forEach(function (player) {
+                    new Plyr(player, {
+                        controls: ['play', 'progress', 'current-time', 'mute']
+                    });
+                });
+            });
+        </script>
+            <script>
+                window.addEventListener("load", () => {
+                    const loader = document.querySelector(".loader");
+                    const body = document.body;
+        
+                    loader.classList.add("loader--hidden");
+                    body.classList.remove("no-scroll"); // Remove the "no-scroll" class to reveal content
+        
+                    loader.addEventListener("transitionend", () => {
+                        body.removeChild(loader);
+                    });
+                });
+            </script>        
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="JS/icon.js"></script>
+        <script src="JS/fact.js"></script>
+    </body>
+</html>
+
+
+
+
+

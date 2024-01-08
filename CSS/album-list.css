@@ -34,27 +34,3 @@
     height: 100%;
     object-fit: cover;
 }
-
-.album-feature {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px;
-}
-.album-text {
-  flex: 1;
-}
-.album-cover {
-  flex: 1;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.album-cover img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
