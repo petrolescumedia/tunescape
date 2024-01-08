@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
 
 input[type=text], input[type=password] {
   width: 100%;
@@ -68,62 +67,52 @@ span.psw {
 </head>
 <body>
 
-<h2>Login Form</h2>
-
 <form action="/action_page.php" method="post">
   <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    <img src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png" alt="Avatar" class="avatar">
   </div>
 
   <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="uname"><b>Utilizator</b></label>
+    <input type="text" placeholder="Cum te cheama melomanule?" name="uname" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="psw"><b>Parola</b></label>
+    <input type="password" placeholder="Baga aici parola - asta daca o mai tii minte" name="psw" required>
         
-    <button type="submit">Login</button>
+    <button type="submit">Autentificare</button>
     <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
+      <input type="checkbox" checked="checked" name="remember"> Da click ca sa te tin minte, poate
     </label>
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+<b>Atentie la Neatentie! </b>
+<br>
+Daca ai uitat parola sau numele de utilizator - fie ca ti-a mancat catelul tema, fie ca esti tu inapt sa le tii minte ca ai 3 randuri de creier - te rugam sa contactezi direct dezvoltatorul aplicatiei. Din lene profunda si prea multa munca ce ar trebui depusa, nu o poti recupera prin email, vorbesti direct cu el si te rezolva
   </div>
 </form>
 
 </body>
-    <script>
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('form').addEventListener('submit', function(e) {
-        e.preventDefault(); // Prevent the default form submission
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
 
-        // Get the entered username and password
-        const username = document.querySelector('input[name="uname"]').value;
-        const password = document.querySelector('input[name="psw"]').value;
+  var enteredUsername = document.querySelector('input[name="uname"]').value;
+  var enteredPassword = document.querySelector('input[name="psw"]').value;
 
-        // Fetch the JSON data (replace 'data.json' with your file path)
-        fetch('file://data.json')
-            .then(response => response.json())
-            .then(data => {
-                // Check if the entered credentials match any in the JSON data
-                const user = data.find(user => user.username === username && user.password === password);
-                if (user) {
-                    // Successful login - redirect or perform necessary action
-                    alert('Login successful!');
-                    // Redirect to a new page or perform any other action here
-                } else {
-                    // Incorrect credentials - show an error message or handle accordingly
-                    alert('Incorrect username or password. Please try again.');
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-                // Handle errors while fetching data
-            });
-    });
+  fetch('database/accounts.json')
+    .then(response => response.json())
+    .then(accounts => {
+      var isValidAccount = accounts.some(account => account.username === enteredUsername && account.password === enteredPassword);
+
+      if (isValidAccount) {
+        window.location.href = 'index.html';
+      } else {
+        alert('Invalid username or password.');
+      }
+    })
+    .catch(error => console.error('Error:', error));
 });
+
 </script>
 </html>
