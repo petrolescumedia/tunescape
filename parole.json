@@ -1,16 +1,16 @@
 {
     "users": [
       {
-        "username": "admin",
-        "password": "password"
+        "username": "Administrator",
+        "password": "admin69"
       },
       {
         "username": "plm68",
         "password": "parola1234"
       },
       {
-        "username": "user1",
-        "password": "password1"
+        "username": "Petrolescu",
+        "password": "petrol"
       },
       {
         "username": "user2",
