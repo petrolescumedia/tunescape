@@ -101,10 +101,9 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     .then(data => {
       var user = data.users.find(user => user.username === username && user.password === password);
       if(user) {
-        alert('Login successful');
         window.location.href = 'home.html'; // Redirect to home.html
       } else {
-        alert('Login failed');
+        alert('Autentificare esuata! Te rugam sa verifici daca ai introdus corect numele de utilizator sau parola');
       }
     })
     .catch(error => console.error('Error:', error));
