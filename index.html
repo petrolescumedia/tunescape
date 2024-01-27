@@ -1,119 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TuneScape - Autentificare</title>
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #04AA6D;
+<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+  
+    button {
+  background-color: #0096FF;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
+  bottom: 20px;
 }
+    button:hover {
+      opacity: 0.8;
+    }
+  
+    .cancelbtn {
+      width: 100%;
+      padding: 10px 0; /* Adjusted padding for full width */
+      background-color: #f44336;
+    }
+  
+    .imgcontainer {
+      text-align: center;
+      margin: 24px 0 12px 0;
+    }
+  
+    img.avatar {
+      width: 40%;
+      border-radius: 50%;
+    }
+  
+    .container {
+      padding: 16px;
+    }
+  
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+  
+    /* Responsive adjustments */
+    @media screen and (max-width: 600px) {
+      img.avatar {
+        width: 70%;
+      }
+  
+      .cancelbtn {
+        padding: 10px 20px; /* Adjusted padding for full width */
+      }
+    }
+  
+    @media screen and (max-width: 400px) {
+      button,
+      .cancelbtn {
+        width: 100%;
+      }
+    }
+  </style>
 
-button:hover {
-  opacity: 0.8;
-}
-
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
-</head>
-<body>
-
-<form>
-  <div class="imgcontainer">
-    <img src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png" alt="Avatar" class="avatar">
-  </div>
-
+<form id="loginForm">
   <div class="container">
-    <label for="uname"><b>Utilizator</b></label>
-    <input type="text" placeholder="Cum te cheama melomanule?" name="uname" required>
+    <div class="imgcontainer">
+      <img src="https://cdn-icons-png.flaticon.com/512/9131/9131529.png" alt="Avatar" class="avatar">
+    </div>
+    <label for="uname"><b>Nume de Utilizator</b></label>
+    <input type="text" placeholder="Cum te cheama melomanule?" id="uname" required>
 
     <label for="psw"><b>Parola</b></label>
-    <input type="password" placeholder="Baga aici parola - asta daca o mai tii minte" name="psw" required>
-        
+    <input type="password" placeholder="Mai stii ce parola ai?" id="psw" required>
     <button type="submit">Autentificare</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Da click ca sa te tin minte, poate
-    </label>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-<b>Atentie la Neatentie! </b>
-<br>
-Daca ai uitat parola sau numele de utilizator - fie ca ti-a mancat catelul tema, fie ca esti tu inapt sa le tii minte ca ai 3 randuri de creier - te rugam sa contactezi direct dezvoltatorul aplicatiei. Din lene profunda si prea multa munca ce ar trebui depusa, nu o poti recupera prin email, vorbesti direct cu el si te rezolva
   </div>
 </form>
 
-</body>
 <script>
-    document.querySelector('form').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevent the form from submitting normally
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault();
 
-  var enteredUsername = document.querySelector('input[name="uname"]').value;
-  var enteredPassword = document.querySelector('input[name="psw"]').value;
+  var username = document.getElementById('uname').value;
+  var password = document.getElementById('psw').value;
 
-  fetch('database/accounts.json')
+  fetch('parole.json')
     .then(response => response.json())
-    .then(accounts => {
-      var isValidAccount = accounts.some(account => account.username === enteredUsername && account.password === enteredPassword);
-
-      if (isValidAccount) {
-        window.location.href = 'index.html';
+    .then(data => {
+      var user = data.users.find(user => user.username === username && user.password === password);
+      if(user) {
+        alert('Login successful');
+        window.location.href = 'home.html'; // Redirect to home.html
       } else {
-        alert('Invalid username or password.');
+        alert('Login failed');
       }
     })
     .catch(error => console.error('Error:', error));
 });
-
 </script>
+
+</body>
 </html>
